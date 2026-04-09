@@ -1,0 +1,11 @@
+{
+    "systemInfo": {
+        "arch": "x64",
+        "cpu": "AMD Ryzen 7 5800H with Radeon Graphics         ",
+        "version": "Windows 11 Home China"
+    },
+    "sceneListMap": {
+        "bb496d75-d15b-4ced-95b3-9abdbbee7b51": "D:\\cocos_zml\\zml-cocos2d-games\\zml-cocos2d-archery\\assets\\Scene\\C1.scene"
+    },
+    "deviceMd5": "d1f6b41300e1bf7c816df4c8ffb97b54"
+}

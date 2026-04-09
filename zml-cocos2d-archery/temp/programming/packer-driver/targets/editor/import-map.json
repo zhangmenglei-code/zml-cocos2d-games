@@ -7,10 +7,11 @@
     "file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts": "./chunks/93/93bb12c6899992ce44e8d5ddc7d66a01f4d1433f.js",
     "file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts": "./chunks/9b/9b8cddb7b6dd91a299d4f54399806cabc5d5f853.js",
     "file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts": "./chunks/c5/c5165284ba2c07ed3a57625104aa2b42b11938f1.js",
-    "file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts": "./chunks/db/db6c9719ceaf9abdcc6eddffdbbc4c229ae01870.js"
+    "file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts": "./chunks/db/db6c9719ceaf9abdcc6eddffdbbc4c229ae01870.js",
+    "file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts": "./chunks/d9/d91cba3dc64e6c36ab0f9e99cb0b08fe3e2838c7.js"
   },
   "scopes": {
-    "./chunks/db/db6c9719ceaf9abdcc6eddffdbbc4c229ae01870.js": {
+    "./chunks/d9/d91cba3dc64e6c36ab0f9e99cb0b08fe3e2838c7.js": {
       "cc": "./chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js"
     },
     "./chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js": {
@@ -62,6 +63,9 @@
       "__unresolved_8": "cce:/internal/x/cc-fu/2d",
       "__unresolved_9": "cce:/internal/x/cc-fu/sorting"
     },
+    "./chunks/db/db6c9719ceaf9abdcc6eddffdbbc4c229ae01870.js": {
+      "cc": "./chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js"
+    },
     "./chunks/c5/c5165284ba2c07ed3a57625104aa2b42b11938f1.js": {
       "__unresolved_0": "./chunks/6a/6a5019a719a9014c047e67aa1cf34453ab8392ce.js",
       "__unresolved_1": "./chunks/9b/9b8cddb7b6dd91a299d4f54399806cabc5d5f853.js",
@@ -93,7 +97,8 @@
       "__unresolved_2": "./chunks/93/93bb12c6899992ce44e8d5ddc7d66a01f4d1433f.js",
       "__unresolved_3": "./chunks/9b/9b8cddb7b6dd91a299d4f54399806cabc5d5f853.js",
       "__unresolved_4": "./chunks/c5/c5165284ba2c07ed3a57625104aa2b42b11938f1.js",
-      "__unresolved_5": "./chunks/db/db6c9719ceaf9abdcc6eddffdbbc4c229ae01870.js"
+      "__unresolved_5": "./chunks/db/db6c9719ceaf9abdcc6eddffdbbc4c229ae01870.js",
+      "__unresolved_6": "./chunks/d9/d91cba3dc64e6c36ab0f9e99cb0b08fe3e2838c7.js"
     }
   }
 }

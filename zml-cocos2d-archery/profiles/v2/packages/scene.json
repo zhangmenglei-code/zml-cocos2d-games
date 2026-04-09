@@ -7,7 +7,7 @@
     "originAxis2D": {
       "x_visible": true,
       "y_visible": true,
-      "z_visible": false
+      "z_visible": true
     },
     "originAxis3D": {
       "x_visible": true,
@@ -106,11 +106,63 @@
         "height": 645
       },
       "scale": 0.6234375
+    },
+    "3b78b7bb-92eb-4904-ba37-a7a1cd05bb3c": {
+      "position": {
+        "x": 632.5914144642352,
+        "y": 687.5276316389393,
+        "z": 5000
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "viewCenter": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "contentRect": {
+        "x": 236.27693998961112,
+        "y": 489.3703944016274,
+        "width": 1140,
+        "height": 645
+      },
+      "scale": 0.37848731162001625
+    },
+    "bb496d75-d15b-4ced-95b3-9abdbbee7b51": {
+      "position": {
+        "x": 344.1006031540716,
+        "y": 784.1913823750929,
+        "z": 5000
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "viewCenter": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "contentRect": {
+        "x": -1909.7310224699859,
+        "y": -491.0028268595713,
+        "width": 302,
+        "height": 537
+      },
+      "scale": 0.2529026540934149
     }
   },
   "camera-uuids": [
     "09192201-ea01-4d30-a5a2-e4cb4c05c97e",
-    "7b2fa8e2-af40-4fdf-a7ad-30a658b45c28"
+    "7b2fa8e2-af40-4fdf-a7ad-30a658b45c28",
+    "3b78b7bb-92eb-4904-ba37-a7a1cd05bb3c",
+    "bb496d75-d15b-4ced-95b3-9abdbbee7b51"
   ],
   "camera": {
     "color": [
@@ -132,5 +184,19 @@
     "iso": 0,
     "aperture": 19,
     "shutter": 7
+  },
+  "scene_view": {
+    "isSceneLightOn": true,
+    "output_device": "__default_design__"
+  },
+  "game-view": {
+    "devicesInfo": {
+      "name": "i18n:scene.game_view.design_resolution",
+      "type": "design",
+      "width": 720,
+      "height": 1280
+    },
+    "scaleValue": 42,
+    "sliderValue": 18
   }
 }

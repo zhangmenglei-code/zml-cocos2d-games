@@ -514,7 +514,7 @@
       ]
     },
     "cce:/internal/x/prerequisite-imports": {
-      "mTimestamp": 9411.7531,
+      "mTimestamp": 12812989.4226,
       "chunkId": "6d8fd2b0177941b032ddc0733af48a561fb60657",
       "imports": [
         {
@@ -600,6 +600,20 @@
               "column": 126
             }
           }
+        },
+        {
+          "value": "file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts",
+          "resolved": "__unresolved_6",
+          "loc": {
+            "start": {
+              "line": 10,
+              "column": 7
+            },
+            "end": {
+              "line": 10,
+              "column": 89
+            }
+          }
         }
       ],
       "type": "esm",
@@ -643,6 +657,13 @@
           "resolved": {
             "type": "module",
             "url": "file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts"
           },
           "messages": []
         }
@@ -1216,6 +1237,58 @@
       "imports": [],
       "type": "esm",
       "resolutions": []
+    },
+    "file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts": {
+      "mTimestamp": {
+        "mtime": 1775637188216.1858,
+        "uuid": "028aadf8-66af-44cd-b91e-ec3aeb5a7762"
+      },
+      "chunkId": "d91cba3dc64e6c36ab0f9e99cb0b08fe3e2838c7",
+      "imports": [
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 44
+            },
+            "end": {
+              "line": 1,
+              "column": 48
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
     }
   }
 }

@@ -1,0 +1,558 @@
+14:04:46.870 debug: Dispatch build request for time accumulated 1 asset changes.
+14:04:46.877 debug: Build iteration starts.
+Number of accumulated asset changes: 1
+Feature changed: false
+14:04:46.878 debug: Target(editor) build started.
+14:04:46.885 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 08:00:09 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 09:04:12 GMT+0800 (中国标准时间)
+14:04:46.885 debug: Inspect cce:/internal/x/prerequisite-imports
+14:04:46.919 debug: transform url: 'cce:/internal/x/prerequisite-imports' costs: 33.40 ms
+14:04:46.922 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts.
+14:04:46.923 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts.
+14:04:46.923 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
+14:04:46.924 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
+14:04:46.925 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts.
+14:04:46.925 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+14:04:46.926 debug: Resolve file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts.
+14:04:46.926 debug: Inspect file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts
+14:04:46.954 debug: transform url: 'file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts' costs: 27.20 ms
+14:04:46.957 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+14:04:46.957 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+14:04:46.957 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+14:04:46.967 debug: Target(editor) ends with cost 88.525099999737ms.
+14:04:46.967 debug: Target(preview) build started.
+14:04:46.970 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 08:00:09 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 09:04:12 GMT+0800 (中国标准时间)
+14:04:46.970 debug: Inspect cce:/internal/x/prerequisite-imports
+14:04:46.985 debug: transform url: 'cce:/internal/x/prerequisite-imports' costs: 15.70 ms
+14:04:46.988 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts.
+14:04:46.989 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts.
+14:04:46.990 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
+14:04:46.991 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
+14:04:46.991 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts.
+14:04:46.992 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+14:04:46.992 debug: Resolve file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts.
+14:04:46.993 debug: Inspect file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts
+14:04:47.023 debug: transform url: 'file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts' costs: 30.00 ms
+14:04:47.026 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+14:04:47.026 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+14:04:47.026 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+14:04:47.036 debug: Target(preview) ends with cost 68.7223000000231ms.
+15:53:42.424 debug: Dispatch build request for time accumulated 1 asset changes.
+15:53:42.434 debug: Build iteration starts.
+Number of accumulated asset changes: 1
+Feature changed: false
+15:53:42.436 debug: Target(editor) build started.
+15:53:42.446 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 09:04:12 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 10:53:08 GMT+0800 (中国标准时间)
+15:53:42.446 debug: Inspect cce:/internal/x/prerequisite-imports
+15:53:42.487 debug: transform url: 'cce:/internal/x/prerequisite-imports' costs: 38.00 ms
+15:53:42.489 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts.
+15:53:42.490 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts.
+15:53:42.491 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
+15:53:42.492 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
+15:53:42.492 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts.
+15:53:42.493 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+15:53:42.493 debug: Resolve file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts.
+15:53:42.493 debug: Detected change: file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts. Last mtime: Wed Apr 08 2026 14:04:46 GMT+0800 (中国标准时间)@028aadf8-66af-44cd-b91e-ec3aeb5a7762, Current mtime: Wed Apr 08 2026 15:52:48 GMT+0800 (中国标准时间)@028aadf8-66af-44cd-b91e-ec3aeb5a7762
+15:53:42.493 debug: Inspect file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts
+15:53:42.561 debug: transform url: 'file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts' costs: 67.70 ms
+15:53:42.564 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+15:53:42.564 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+15:53:42.564 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+15:53:42.574 debug: Target(editor) ends with cost 137.35790000110865ms.
+15:53:42.574 debug: Target(preview) build started.
+15:53:42.577 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 09:04:12 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 10:53:08 GMT+0800 (中国标准时间)
+15:53:42.577 debug: Inspect cce:/internal/x/prerequisite-imports
+15:53:42.592 debug: transform url: 'cce:/internal/x/prerequisite-imports' costs: 14.70 ms
+15:53:42.595 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts.
+15:53:42.596 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts.
+15:53:42.596 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
+15:53:42.597 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
+15:53:42.598 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts.
+15:53:42.598 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+15:53:42.599 debug: Resolve file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts.
+15:53:42.599 debug: Detected change: file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts. Last mtime: Wed Apr 08 2026 14:04:46 GMT+0800 (中国标准时间)@028aadf8-66af-44cd-b91e-ec3aeb5a7762, Current mtime: Wed Apr 08 2026 15:52:48 GMT+0800 (中国标准时间)@028aadf8-66af-44cd-b91e-ec3aeb5a7762
+15:53:42.599 debug: Inspect file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts
+15:53:42.643 debug: transform url: 'file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts' costs: 43.70 ms
+15:53:42.645 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+15:53:42.645 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+15:53:42.645 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+15:53:42.657 debug: Target(preview) ends with cost 82.80709999985993ms.
+16:18:42.385 debug: Dispatch build request for time accumulated 1 asset changes.
+16:18:42.387 debug: Build iteration starts.
+Number of accumulated asset changes: 1
+Feature changed: false
+16:18:42.387 debug: Target(editor) build started.
+16:18:42.392 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 10:53:08 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 11:18:08 GMT+0800 (中国标准时间)
+16:18:42.392 debug: Inspect cce:/internal/x/prerequisite-imports
+16:18:42.403 debug: transform url: 'cce:/internal/x/prerequisite-imports' costs: 11.10 ms
+16:18:42.405 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts.
+16:18:42.406 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts.
+16:18:42.407 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
+16:18:42.407 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
+16:18:42.408 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts.
+16:18:42.408 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+16:18:42.409 debug: Resolve file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts.
+16:18:42.409 debug: Detected change: file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts. Last mtime: Wed Apr 08 2026 15:52:48 GMT+0800 (中国标准时间)@028aadf8-66af-44cd-b91e-ec3aeb5a7762, Current mtime: Wed Apr 08 2026 15:56:53 GMT+0800 (中国标准时间)@028aadf8-66af-44cd-b91e-ec3aeb5a7762
+16:18:42.409 debug: Inspect file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts
+16:18:42.436 debug: transform url: 'file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts' costs: 27.10 ms
+16:18:42.438 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:18:42.438 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:18:42.439 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:18:42.449 debug: Target(editor) ends with cost 61.65029999986291ms.
+16:18:42.450 debug: Target(preview) build started.
+16:18:42.452 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 10:53:08 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 11:18:08 GMT+0800 (中国标准时间)
+16:18:42.452 debug: Inspect cce:/internal/x/prerequisite-imports
+16:18:42.463 debug: transform url: 'cce:/internal/x/prerequisite-imports' costs: 11.40 ms
+16:18:42.465 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts.
+16:18:42.466 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts.
+16:18:42.466 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
+16:18:42.467 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
+16:18:42.468 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts.
+16:18:42.469 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+16:18:42.469 debug: Resolve file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts.
+16:18:42.469 debug: Detected change: file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts. Last mtime: Wed Apr 08 2026 15:52:48 GMT+0800 (中国标准时间)@028aadf8-66af-44cd-b91e-ec3aeb5a7762, Current mtime: Wed Apr 08 2026 15:56:53 GMT+0800 (中国标准时间)@028aadf8-66af-44cd-b91e-ec3aeb5a7762
+16:18:42.469 debug: Inspect file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts
+16:18:42.498 debug: transform url: 'file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts' costs: 29.20 ms
+16:18:42.500 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:18:42.500 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:18:42.500 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:18:42.511 debug: Target(preview) ends with cost 61.82560000009835ms.
+16:20:05.434 debug: Dispatch build request for time accumulated 1 asset changes.
+16:20:05.436 debug: Build iteration starts.
+Number of accumulated asset changes: 1
+Feature changed: false
+16:20:05.436 debug: Target(editor) build started.
+16:20:05.439 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 11:18:08 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 11:19:31 GMT+0800 (中国标准时间)
+16:20:05.439 debug: Inspect cce:/internal/x/prerequisite-imports
+16:20:05.448 debug: transform url: 'cce:/internal/x/prerequisite-imports' costs: 9.20 ms
+16:20:05.450 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts.
+16:20:05.451 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts.
+16:20:05.452 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
+16:20:05.452 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
+16:20:05.453 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts.
+16:20:05.454 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+16:20:05.454 debug: Resolve file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts.
+16:20:05.455 debug: Detected change: file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts. Last mtime: Wed Apr 08 2026 15:56:53 GMT+0800 (中国标准时间)@028aadf8-66af-44cd-b91e-ec3aeb5a7762, Current mtime: Wed Apr 08 2026 16:20:04 GMT+0800 (中国标准时间)@028aadf8-66af-44cd-b91e-ec3aeb5a7762
+16:20:05.455 debug: Inspect file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts
+16:20:05.479 debug: transform url: 'file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts' costs: 23.90 ms
+16:20:05.480 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:20:05.480 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:20:05.480 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:20:05.490 debug: Target(editor) ends with cost 53.806099999696016ms.
+16:20:05.491 debug: Target(preview) build started.
+16:20:05.492 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 11:18:08 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 11:19:31 GMT+0800 (中国标准时间)
+16:20:05.492 debug: Inspect cce:/internal/x/prerequisite-imports
+16:20:05.507 debug: transform url: 'cce:/internal/x/prerequisite-imports' costs: 14.70 ms
+16:20:05.510 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts.
+16:20:05.511 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts.
+16:20:05.512 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
+16:20:05.512 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
+16:20:05.513 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts.
+16:20:05.514 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+16:20:05.515 debug: Resolve file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts.
+16:20:05.515 debug: Detected change: file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts. Last mtime: Wed Apr 08 2026 15:56:53 GMT+0800 (中国标准时间)@028aadf8-66af-44cd-b91e-ec3aeb5a7762, Current mtime: Wed Apr 08 2026 16:20:04 GMT+0800 (中国标准时间)@028aadf8-66af-44cd-b91e-ec3aeb5a7762
+16:20:05.515 debug: Inspect file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts
+16:20:05.543 debug: transform url: 'file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts' costs: 28.10 ms
+16:20:05.545 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:20:05.546 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:20:05.546 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:20:05.558 debug: Target(preview) ends with cost 67.11470000073314ms.
+16:20:55.894 debug: Dispatch build request for time accumulated 1 asset changes.
+16:20:55.896 debug: Build iteration starts.
+Number of accumulated asset changes: 1
+Feature changed: false
+16:20:55.896 debug: Target(editor) build started.
+16:20:55.899 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 11:19:31 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 11:20:21 GMT+0800 (中国标准时间)
+16:20:55.899 debug: Inspect cce:/internal/x/prerequisite-imports
+16:20:55.908 debug: transform url: 'cce:/internal/x/prerequisite-imports' costs: 8.80 ms
+16:20:55.910 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts.
+16:20:55.912 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts.
+16:20:55.912 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
+16:20:55.913 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
+16:20:55.913 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts.
+16:20:55.914 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+16:20:55.915 debug: Resolve file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts.
+16:20:55.915 debug: Detected change: file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts. Last mtime: Wed Apr 08 2026 16:20:04 GMT+0800 (中国标准时间)@028aadf8-66af-44cd-b91e-ec3aeb5a7762, Current mtime: Wed Apr 08 2026 16:20:54 GMT+0800 (中国标准时间)@028aadf8-66af-44cd-b91e-ec3aeb5a7762
+16:20:55.915 debug: Inspect file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts
+16:20:55.937 debug: transform url: 'file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts' costs: 22.60 ms
+16:20:55.939 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:20:55.940 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:20:55.940 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:20:55.950 debug: Target(editor) ends with cost 53.43820000067353ms.
+16:20:55.950 debug: Target(preview) build started.
+16:20:55.953 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 11:19:31 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 11:20:21 GMT+0800 (中国标准时间)
+16:20:55.953 debug: Inspect cce:/internal/x/prerequisite-imports
+16:20:55.965 debug: transform url: 'cce:/internal/x/prerequisite-imports' costs: 11.90 ms
+16:20:55.967 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts.
+16:20:55.968 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts.
+16:20:55.968 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
+16:20:55.969 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
+16:20:55.970 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts.
+16:20:55.971 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+16:20:55.971 debug: Resolve file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts.
+16:20:55.971 debug: Detected change: file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts. Last mtime: Wed Apr 08 2026 16:20:04 GMT+0800 (中国标准时间)@028aadf8-66af-44cd-b91e-ec3aeb5a7762, Current mtime: Wed Apr 08 2026 16:20:54 GMT+0800 (中国标准时间)@028aadf8-66af-44cd-b91e-ec3aeb5a7762
+16:20:55.971 debug: Inspect file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts
+16:20:55.999 debug: transform url: 'file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts' costs: 28.20 ms
+16:20:56.001 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:20:56.001 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:20:56.002 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:20:56.013 debug: Target(preview) ends with cost 63.00129999965429ms.
+16:22:41.768 debug: Dispatch build request for time accumulated 1 asset changes.
+16:22:41.769 debug: Build iteration starts.
+Number of accumulated asset changes: 1
+Feature changed: false
+16:22:41.770 debug: Target(editor) build started.
+16:22:41.772 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 11:20:21 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 11:22:07 GMT+0800 (中国标准时间)
+16:22:41.772 debug: Inspect cce:/internal/x/prerequisite-imports
+16:22:41.780 debug: transform url: 'cce:/internal/x/prerequisite-imports' costs: 7.80 ms
+16:22:41.783 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts.
+16:22:41.784 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts.
+16:22:41.785 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
+16:22:41.785 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
+16:22:41.786 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts.
+16:22:41.787 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+16:22:41.788 debug: Resolve file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts.
+16:22:41.788 debug: Detected change: file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts. Last mtime: Wed Apr 08 2026 16:20:54 GMT+0800 (中国标准时间)@028aadf8-66af-44cd-b91e-ec3aeb5a7762, Current mtime: Wed Apr 08 2026 16:22:39 GMT+0800 (中国标准时间)@028aadf8-66af-44cd-b91e-ec3aeb5a7762
+16:22:41.788 debug: Inspect file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts
+16:22:41.809 debug: transform url: 'file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts' costs: 20.40 ms
+16:22:41.811 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:22:41.811 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:22:41.811 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:22:41.821 debug: Target(editor) ends with cost 51.61739999987185ms.
+16:22:41.822 debug: Target(preview) build started.
+16:22:41.823 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 11:20:21 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 11:22:07 GMT+0800 (中国标准时间)
+16:22:41.823 debug: Inspect cce:/internal/x/prerequisite-imports
+16:22:41.838 debug: transform url: 'cce:/internal/x/prerequisite-imports' costs: 14.40 ms
+16:22:41.840 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts.
+16:22:41.841 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts.
+16:22:41.842 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
+16:22:41.842 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
+16:22:41.843 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts.
+16:22:41.844 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+16:22:41.844 debug: Resolve file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts.
+16:22:41.844 debug: Detected change: file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts. Last mtime: Wed Apr 08 2026 16:20:54 GMT+0800 (中国标准时间)@028aadf8-66af-44cd-b91e-ec3aeb5a7762, Current mtime: Wed Apr 08 2026 16:22:39 GMT+0800 (中国标准时间)@028aadf8-66af-44cd-b91e-ec3aeb5a7762
+16:22:41.844 debug: Inspect file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts
+16:22:41.873 debug: transform url: 'file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts' costs: 28.30 ms
+16:22:41.875 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:22:41.876 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:22:41.876 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:22:41.887 debug: Target(preview) ends with cost 65.56489999964833ms.
+16:23:11.660 debug: Dispatch build request for time accumulated 1 asset changes.
+16:23:11.662 debug: Build iteration starts.
+Number of accumulated asset changes: 1
+Feature changed: false
+16:23:11.662 debug: Target(editor) build started.
+16:23:11.664 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 11:22:07 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 11:22:37 GMT+0800 (中国标准时间)
+16:23:11.664 debug: Inspect cce:/internal/x/prerequisite-imports
+16:23:11.673 debug: transform url: 'cce:/internal/x/prerequisite-imports' costs: 8.60 ms
+16:23:11.675 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts.
+16:23:11.676 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts.
+16:23:11.677 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
+16:23:11.677 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
+16:23:11.678 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts.
+16:23:11.679 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+16:23:11.679 debug: Resolve file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts.
+16:23:11.679 debug: Detected change: file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts. Last mtime: Wed Apr 08 2026 16:22:39 GMT+0800 (中国标准时间)@028aadf8-66af-44cd-b91e-ec3aeb5a7762, Current mtime: Wed Apr 08 2026 16:23:10 GMT+0800 (中国标准时间)@028aadf8-66af-44cd-b91e-ec3aeb5a7762
+16:23:11.679 debug: Inspect file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts
+16:23:11.700 debug: transform url: 'file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts' costs: 21.30 ms
+16:23:11.702 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:23:11.702 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:23:11.702 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:23:11.710 debug: Target(editor) ends with cost 48.46030000038445ms.
+16:23:11.710 debug: Target(preview) build started.
+16:23:11.712 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 11:22:07 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 11:22:37 GMT+0800 (中国标准时间)
+16:23:11.712 debug: Inspect cce:/internal/x/prerequisite-imports
+16:23:11.724 debug: transform url: 'cce:/internal/x/prerequisite-imports' costs: 11.90 ms
+16:23:11.727 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts.
+16:23:11.727 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts.
+16:23:11.728 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
+16:23:11.729 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
+16:23:11.730 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts.
+16:23:11.731 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+16:23:11.732 debug: Resolve file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts.
+16:23:11.732 debug: Detected change: file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts. Last mtime: Wed Apr 08 2026 16:22:39 GMT+0800 (中国标准时间)@028aadf8-66af-44cd-b91e-ec3aeb5a7762, Current mtime: Wed Apr 08 2026 16:23:10 GMT+0800 (中国标准时间)@028aadf8-66af-44cd-b91e-ec3aeb5a7762
+16:23:11.732 debug: Inspect file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts
+16:23:11.763 debug: transform url: 'file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts' costs: 31.30 ms
+16:23:11.766 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:23:11.766 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:23:11.766 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:23:11.780 debug: Target(preview) ends with cost 69.29050000011921ms.
+16:23:33.031 debug: Dispatch build request for time accumulated 1 asset changes.
+16:23:33.033 debug: Build iteration starts.
+Number of accumulated asset changes: 1
+Feature changed: false
+16:23:33.034 debug: Target(editor) build started.
+16:23:33.036 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 11:22:37 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 11:22:59 GMT+0800 (中国标准时间)
+16:23:33.036 debug: Inspect cce:/internal/x/prerequisite-imports
+16:23:33.045 debug: transform url: 'cce:/internal/x/prerequisite-imports' costs: 9.20 ms
+16:23:33.049 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts.
+16:23:33.050 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts.
+16:23:33.050 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
+16:23:33.051 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
+16:23:33.052 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts.
+16:23:33.052 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+16:23:33.053 debug: Resolve file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts.
+16:23:33.053 debug: Detected change: file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts. Last mtime: Wed Apr 08 2026 16:23:10 GMT+0800 (中国标准时间)@028aadf8-66af-44cd-b91e-ec3aeb5a7762, Current mtime: Wed Apr 08 2026 16:23:23 GMT+0800 (中国标准时间)@028aadf8-66af-44cd-b91e-ec3aeb5a7762
+16:23:33.053 debug: Inspect file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts
+16:23:33.072 debug: transform url: 'file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts' costs: 19.20 ms
+16:23:33.074 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:23:33.074 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:23:33.074 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:23:33.084 debug: Target(editor) ends with cost 50.15810000151396ms.
+16:23:33.084 debug: Target(preview) build started.
+16:23:33.086 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 11:22:37 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 11:22:59 GMT+0800 (中国标准时间)
+16:23:33.086 debug: Inspect cce:/internal/x/prerequisite-imports
+16:23:33.097 debug: transform url: 'cce:/internal/x/prerequisite-imports' costs: 10.40 ms
+16:23:33.099 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts.
+16:23:33.100 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts.
+16:23:33.101 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
+16:23:33.102 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
+16:23:33.103 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts.
+16:23:33.103 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+16:23:33.104 debug: Resolve file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts.
+16:23:33.105 debug: Detected change: file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts. Last mtime: Wed Apr 08 2026 16:23:10 GMT+0800 (中国标准时间)@028aadf8-66af-44cd-b91e-ec3aeb5a7762, Current mtime: Wed Apr 08 2026 16:23:23 GMT+0800 (中国标准时间)@028aadf8-66af-44cd-b91e-ec3aeb5a7762
+16:23:33.106 debug: Inspect file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts
+16:23:33.132 debug: transform url: 'file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts' costs: 26.00 ms
+16:23:33.134 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:23:33.134 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:23:33.134 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:23:33.144 debug: Target(preview) ends with cost 60.196299999952316ms.
+16:32:11.483 debug: Dispatch build request for time accumulated 1 asset changes.
+16:32:11.487 debug: Build iteration starts.
+Number of accumulated asset changes: 1
+Feature changed: false
+16:32:11.487 debug: Target(editor) build started.
+16:32:11.489 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 11:22:59 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 11:31:37 GMT+0800 (中国标准时间)
+16:32:11.489 debug: Inspect cce:/internal/x/prerequisite-imports
+16:32:11.497 debug: transform url: 'cce:/internal/x/prerequisite-imports' costs: 7.90 ms
+16:32:11.500 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts.
+16:32:11.500 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts.
+16:32:11.501 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
+16:32:11.502 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
+16:32:11.502 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts.
+16:32:11.503 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+16:32:11.503 debug: Resolve file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts.
+16:32:11.503 debug: Detected change: file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts. Last mtime: Wed Apr 08 2026 16:23:23 GMT+0800 (中国标准时间)@028aadf8-66af-44cd-b91e-ec3aeb5a7762, Current mtime: Wed Apr 08 2026 16:32:09 GMT+0800 (中国标准时间)@028aadf8-66af-44cd-b91e-ec3aeb5a7762
+16:32:11.503 debug: Inspect file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts
+16:32:11.524 debug: transform url: 'file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts' costs: 20.50 ms
+16:32:11.526 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:32:11.526 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:32:11.526 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:32:11.536 debug: Target(editor) ends with cost 49.076799999922514ms.
+16:32:11.537 debug: Target(preview) build started.
+16:32:11.539 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 11:22:59 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 11:31:37 GMT+0800 (中国标准时间)
+16:32:11.539 debug: Inspect cce:/internal/x/prerequisite-imports
+16:32:11.548 debug: transform url: 'cce:/internal/x/prerequisite-imports' costs: 9.40 ms
+16:32:11.551 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts.
+16:32:11.552 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts.
+16:32:11.553 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
+16:32:11.553 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
+16:32:11.554 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts.
+16:32:11.555 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+16:32:11.555 debug: Resolve file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts.
+16:32:11.555 debug: Detected change: file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts. Last mtime: Wed Apr 08 2026 16:23:23 GMT+0800 (中国标准时间)@028aadf8-66af-44cd-b91e-ec3aeb5a7762, Current mtime: Wed Apr 08 2026 16:32:09 GMT+0800 (中国标准时间)@028aadf8-66af-44cd-b91e-ec3aeb5a7762
+16:32:11.555 debug: Inspect file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts
+16:32:11.608 debug: transform url: 'file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts' costs: 52.30 ms
+16:32:11.610 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:32:11.611 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:32:11.611 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:32:11.627 debug: Target(preview) ends with cost 90.62430000118911ms.
+16:32:19.821 debug: Dispatch build request for time accumulated 1 asset changes.
+16:32:19.824 debug: Build iteration starts.
+Number of accumulated asset changes: 1
+Feature changed: false
+16:32:19.824 debug: Target(editor) build started.
+16:32:19.827 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 11:31:37 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 11:31:45 GMT+0800 (中国标准时间)
+16:32:19.827 debug: Inspect cce:/internal/x/prerequisite-imports
+16:32:19.838 debug: transform url: 'cce:/internal/x/prerequisite-imports' costs: 10.80 ms
+16:32:19.840 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts.
+16:32:19.841 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts.
+16:32:19.841 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
+16:32:19.842 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
+16:32:19.842 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts.
+16:32:19.843 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+16:32:19.843 debug: Resolve file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts.
+16:32:19.843 debug: Detected change: file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts. Last mtime: Wed Apr 08 2026 16:32:09 GMT+0800 (中国标准时间)@028aadf8-66af-44cd-b91e-ec3aeb5a7762, Current mtime: Wed Apr 08 2026 16:32:18 GMT+0800 (中国标准时间)@028aadf8-66af-44cd-b91e-ec3aeb5a7762
+16:32:19.843 debug: Inspect file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts
+16:32:19.868 debug: transform url: 'file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts' costs: 25.00 ms
+16:32:19.870 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:32:19.870 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:32:19.870 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:32:19.879 debug: Target(editor) ends with cost 55.325699999928474ms.
+16:32:19.880 debug: Target(preview) build started.
+16:32:19.881 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 11:31:37 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 11:31:45 GMT+0800 (中国标准时间)
+16:32:19.882 debug: Inspect cce:/internal/x/prerequisite-imports
+16:32:19.894 debug: transform url: 'cce:/internal/x/prerequisite-imports' costs: 12.20 ms
+16:32:19.896 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts.
+16:32:19.897 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts.
+16:32:19.898 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
+16:32:19.899 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
+16:32:19.900 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts.
+16:32:19.901 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+16:32:19.902 debug: Resolve file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts.
+16:32:19.902 debug: Detected change: file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts. Last mtime: Wed Apr 08 2026 16:32:09 GMT+0800 (中国标准时间)@028aadf8-66af-44cd-b91e-ec3aeb5a7762, Current mtime: Wed Apr 08 2026 16:32:18 GMT+0800 (中国标准时间)@028aadf8-66af-44cd-b91e-ec3aeb5a7762
+16:32:19.902 debug: Inspect file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts
+16:32:19.934 debug: transform url: 'file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts' costs: 31.70 ms
+16:32:19.935 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:32:19.935 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:32:19.935 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:32:19.944 debug: Target(preview) ends with cost 64.53480000048876ms.
+16:32:33.066 debug: Dispatch build request for time accumulated 1 asset changes.
+16:32:33.069 debug: Build iteration starts.
+Number of accumulated asset changes: 1
+Feature changed: false
+16:32:33.069 debug: Target(editor) build started.
+16:32:33.072 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 11:31:45 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 11:31:59 GMT+0800 (中国标准时间)
+16:32:33.072 debug: Inspect cce:/internal/x/prerequisite-imports
+16:32:33.083 debug: transform url: 'cce:/internal/x/prerequisite-imports' costs: 10.90 ms
+16:32:33.086 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts.
+16:32:33.086 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts.
+16:32:33.088 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
+16:32:33.089 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
+16:32:33.090 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts.
+16:32:33.090 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+16:32:33.090 debug: Resolve file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts.
+16:32:33.091 debug: Detected change: file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts. Last mtime: Wed Apr 08 2026 16:32:18 GMT+0800 (中国标准时间)@028aadf8-66af-44cd-b91e-ec3aeb5a7762, Current mtime: Wed Apr 08 2026 16:32:31 GMT+0800 (中国标准时间)@028aadf8-66af-44cd-b91e-ec3aeb5a7762
+16:32:33.091 debug: Inspect file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts
+16:32:33.111 debug: transform url: 'file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts' costs: 20.60 ms
+16:32:33.114 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:32:33.114 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:32:33.114 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:32:33.123 debug: Target(editor) ends with cost 53.49189999885857ms.
+16:32:33.123 debug: Target(preview) build started.
+16:32:33.125 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 11:31:45 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 11:31:59 GMT+0800 (中国标准时间)
+16:32:33.125 debug: Inspect cce:/internal/x/prerequisite-imports
+16:32:33.136 debug: transform url: 'cce:/internal/x/prerequisite-imports' costs: 10.80 ms
+16:32:33.139 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts.
+16:32:33.139 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts.
+16:32:33.140 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
+16:32:33.141 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
+16:32:33.141 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts.
+16:32:33.142 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+16:32:33.143 debug: Resolve file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts.
+16:32:33.143 debug: Detected change: file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts. Last mtime: Wed Apr 08 2026 16:32:18 GMT+0800 (中国标准时间)@028aadf8-66af-44cd-b91e-ec3aeb5a7762, Current mtime: Wed Apr 08 2026 16:32:31 GMT+0800 (中国标准时间)@028aadf8-66af-44cd-b91e-ec3aeb5a7762
+16:32:33.143 debug: Inspect file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts
+16:32:33.171 debug: transform url: 'file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts' costs: 27.80 ms
+16:32:33.173 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:32:33.174 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:32:33.174 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:32:33.183 debug: Target(preview) ends with cost 60.30790000036359ms.
+16:32:50.502 debug: Dispatch build request for time accumulated 1 asset changes.
+16:32:50.504 debug: Build iteration starts.
+Number of accumulated asset changes: 1
+Feature changed: false
+16:32:50.505 debug: Target(editor) build started.
+16:32:50.507 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 11:31:59 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 11:32:16 GMT+0800 (中国标准时间)
+16:32:50.507 debug: Inspect cce:/internal/x/prerequisite-imports
+16:32:50.514 debug: transform url: 'cce:/internal/x/prerequisite-imports' costs: 7.10 ms
+16:32:50.517 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts.
+16:32:50.518 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts.
+16:32:50.519 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
+16:32:50.520 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
+16:32:50.521 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts.
+16:32:50.521 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+16:32:50.522 debug: Resolve file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts.
+16:32:50.522 debug: Detected change: file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts. Last mtime: Wed Apr 08 2026 16:32:31 GMT+0800 (中国标准时间)@028aadf8-66af-44cd-b91e-ec3aeb5a7762, Current mtime: Wed Apr 08 2026 16:32:49 GMT+0800 (中国标准时间)@028aadf8-66af-44cd-b91e-ec3aeb5a7762
+16:32:50.522 debug: Inspect file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts
+16:32:50.544 debug: transform url: 'file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts' costs: 22.30 ms
+16:32:50.546 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:32:50.546 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:32:50.547 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:32:50.556 debug: Target(editor) ends with cost 50.988400001078844ms.
+16:32:50.556 debug: Target(preview) build started.
+16:32:50.558 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 11:31:59 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 11:32:16 GMT+0800 (中国标准时间)
+16:32:50.558 debug: Inspect cce:/internal/x/prerequisite-imports
+16:32:50.569 debug: transform url: 'cce:/internal/x/prerequisite-imports' costs: 10.00 ms
+16:32:50.571 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts.
+16:32:50.572 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts.
+16:32:50.572 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
+16:32:50.573 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
+16:32:50.574 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts.
+16:32:50.574 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+16:32:50.575 debug: Resolve file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts.
+16:32:50.575 debug: Detected change: file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts. Last mtime: Wed Apr 08 2026 16:32:31 GMT+0800 (中国标准时间)@028aadf8-66af-44cd-b91e-ec3aeb5a7762, Current mtime: Wed Apr 08 2026 16:32:49 GMT+0800 (中国标准时间)@028aadf8-66af-44cd-b91e-ec3aeb5a7762
+16:32:50.575 debug: Inspect file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts
+16:32:50.603 debug: transform url: 'file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts' costs: 28.10 ms
+16:32:50.605 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:32:50.605 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:32:50.605 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:32:50.616 debug: Target(preview) ends with cost 59.628600001335144ms.
+16:32:58.921 debug: Dispatch build request for time accumulated 1 asset changes.
+16:32:58.924 debug: Build iteration starts.
+Number of accumulated asset changes: 1
+Feature changed: false
+16:32:58.924 debug: Target(editor) build started.
+16:32:58.927 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 11:32:16 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 11:32:24 GMT+0800 (中国标准时间)
+16:32:58.927 debug: Inspect cce:/internal/x/prerequisite-imports
+16:32:58.936 debug: transform url: 'cce:/internal/x/prerequisite-imports' costs: 9.40 ms
+16:32:58.939 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts.
+16:32:58.939 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts.
+16:32:58.940 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
+16:32:58.941 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
+16:32:58.942 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts.
+16:32:58.942 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+16:32:58.943 debug: Resolve file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts.
+16:32:58.943 debug: Detected change: file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts. Last mtime: Wed Apr 08 2026 16:32:49 GMT+0800 (中国标准时间)@028aadf8-66af-44cd-b91e-ec3aeb5a7762, Current mtime: Wed Apr 08 2026 16:32:56 GMT+0800 (中国标准时间)@028aadf8-66af-44cd-b91e-ec3aeb5a7762
+16:32:58.943 debug: Inspect file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts
+16:32:58.966 debug: transform url: 'file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts' costs: 23.30 ms
+16:32:58.968 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:32:58.968 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:32:58.968 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:32:58.978 debug: Target(editor) ends with cost 53.85029999911785ms.
+16:32:58.978 debug: Target(preview) build started.
+16:32:58.980 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 11:32:16 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 11:32:24 GMT+0800 (中国标准时间)
+16:32:58.980 debug: Inspect cce:/internal/x/prerequisite-imports
+16:32:58.992 debug: transform url: 'cce:/internal/x/prerequisite-imports' costs: 11.90 ms
+16:32:58.994 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts.
+16:32:58.995 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts.
+16:32:58.995 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
+16:32:58.996 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
+16:32:58.997 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts.
+16:32:58.997 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+16:32:58.998 debug: Resolve file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts.
+16:32:58.998 debug: Detected change: file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts. Last mtime: Wed Apr 08 2026 16:32:49 GMT+0800 (中国标准时间)@028aadf8-66af-44cd-b91e-ec3aeb5a7762, Current mtime: Wed Apr 08 2026 16:32:56 GMT+0800 (中国标准时间)@028aadf8-66af-44cd-b91e-ec3aeb5a7762
+16:32:58.998 debug: Inspect file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts
+16:32:59.025 debug: transform url: 'file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts' costs: 26.50 ms
+16:32:59.028 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:32:59.028 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:32:59.028 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:32:59.039 debug: Target(preview) ends with cost 60.24189999885857ms.
+16:34:06.924 debug: Dispatch build request for time accumulated 1 asset changes.
+16:34:06.926 debug: Build iteration starts.
+Number of accumulated asset changes: 1
+Feature changed: false
+16:34:06.926 debug: Target(editor) build started.
+16:34:06.928 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 11:32:24 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 11:33:32 GMT+0800 (中国标准时间)
+16:34:06.928 debug: Inspect cce:/internal/x/prerequisite-imports
+16:34:06.936 debug: transform url: 'cce:/internal/x/prerequisite-imports' costs: 7.70 ms
+16:34:06.938 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts.
+16:34:06.939 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts.
+16:34:06.940 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
+16:34:06.942 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
+16:34:06.943 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts.
+16:34:06.944 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+16:34:06.944 debug: Resolve file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts.
+16:34:06.944 debug: Detected change: file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts. Last mtime: Wed Apr 08 2026 16:32:56 GMT+0800 (中国标准时间)@028aadf8-66af-44cd-b91e-ec3aeb5a7762, Current mtime: Wed Apr 08 2026 16:33:08 GMT+0800 (中国标准时间)@028aadf8-66af-44cd-b91e-ec3aeb5a7762
+16:34:06.945 debug: Inspect file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts
+16:34:06.966 debug: transform url: 'file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts' costs: 21.60 ms
+16:34:06.969 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:34:06.969 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:34:06.969 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:34:06.979 debug: Target(editor) ends with cost 52.30680000036955ms.
+16:34:06.979 debug: Target(preview) build started.
+16:34:06.980 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 11:32:24 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 11:33:32 GMT+0800 (中国标准时间)
+16:34:06.980 debug: Inspect cce:/internal/x/prerequisite-imports
+16:34:06.991 debug: transform url: 'cce:/internal/x/prerequisite-imports' costs: 10.80 ms
+16:34:06.993 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts.
+16:34:06.994 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts.
+16:34:06.994 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
+16:34:06.995 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
+16:34:06.996 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts.
+16:34:06.996 debug: Resolve file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+16:34:06.997 debug: Resolve file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts from cce:/internal/x/prerequisite-imports as file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts.
+16:34:06.997 debug: Detected change: file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts. Last mtime: Wed Apr 08 2026 16:32:56 GMT+0800 (中国标准时间)@028aadf8-66af-44cd-b91e-ec3aeb5a7762, Current mtime: Wed Apr 08 2026 16:33:08 GMT+0800 (中国标准时间)@028aadf8-66af-44cd-b91e-ec3aeb5a7762
+16:34:06.997 debug: Inspect file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts
+16:34:07.025 debug: transform url: 'file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts' costs: 27.30 ms
+16:34:07.028 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:34:07.028 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:34:07.028 debug: Resolve cc from file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts as cce:/internal/x/cc.
+16:34:07.038 debug: Target(preview) ends with cost 59.06599999964237ms.

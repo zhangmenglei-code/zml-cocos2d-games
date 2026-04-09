@@ -362,9 +362,28 @@
             "id": "db6c9719ceaf9abdcc6eddffdbbc4c229ae01870"
           },
           "messages": []
+        },
+        "__unresolved_6": {
+          "resolved": {
+            "type": "chunk",
+            "id": "d91cba3dc64e6c36ab0f9e99cb0b08fe3e2838c7"
+          },
+          "messages": []
         }
       },
-      "timestamp": 1775624443416
+      "timestamp": 1775637246991
+    },
+    "d91cba3dc64e6c36ab0f9e99cb0b08fe3e2838c7": {
+      "imports": {
+        "cc": {
+          "resolved": {
+            "type": "chunk",
+            "id": "93ba276ea7b26ffcdc433fab14afc1ed6f05647b"
+          },
+          "messages": []
+        }
+      },
+      "timestamp": 1775637247025
     }
   },
   "entries": {
@@ -375,6 +394,7 @@
     "file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts": "93bb12c6899992ce44e8d5ddc7d66a01f4d1433f",
     "file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts": "9b8cddb7b6dd91a299d4f54399806cabc5d5f853",
     "file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts": "c5165284ba2c07ed3a57625104aa2b42b11938f1",
-    "file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts": "db6c9719ceaf9abdcc6eddffdbbc4c229ae01870"
+    "file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts": "db6c9719ceaf9abdcc6eddffdbbc4c229ae01870",
+    "file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts": "d91cba3dc64e6c36ab0f9e99cb0b08fe3e2838c7"
   }
 }

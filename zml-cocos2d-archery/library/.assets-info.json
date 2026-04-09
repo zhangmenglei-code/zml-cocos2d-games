@@ -1,0 +1,62 @@
+{
+  "version": "1.0.1",
+  "map": {
+    "Scene.meta": {
+      "time": 1775624937703.5864
+    },
+    "Scene": {
+      "time": 1775625023116.7087,
+      "uuid": "a49ea9e6-aad1-4012-8f13-f95666399885"
+    },
+    "Ui.meta": {
+      "time": 1775624943130.2285
+    },
+    "Ui": {
+      "time": 1775630918002.0251,
+      "uuid": "7d14f4d2-5875-45b7-9b44-96b864bd1781"
+    },
+    "code.meta": {
+      "time": 1775624984114.252
+    },
+    "code": {
+      "time": 1775628286842.4526,
+      "uuid": "79ce3377-5518-4a40-af99-8108419a24a6"
+    },
+    "Scene\\C1.scene.meta": {
+      "time": 1775625023121.1074
+    },
+    "Scene\\C1.scene": {
+      "time": 1775655275411.5557,
+      "uuid": "bb496d75-d15b-4ced-95b3-9abdbbee7b51"
+    },
+    "Ui\\jian.png.meta": {
+      "time": 1775627664971.0525
+    },
+    "Ui\\jian.png": {
+      "time": 1775627603245.2517,
+      "uuid": "a8dc3465-48bf-4e08-88b3-9a1dfd155a19"
+    },
+    "Ui\\lunpan.png.meta": {
+      "time": 1775628133040.9004
+    },
+    "Ui\\lunpan.png": {
+      "time": 1775628098299.0115,
+      "uuid": "23435c33-17ff-4c3d-af9c-56e263fba632"
+    },
+    "code\\player.ts.meta": {
+      "time": 1775628286844.4585
+    },
+    "code\\player.ts": {
+      "time": 1775637188216.1858,
+      "uuid": "028aadf8-66af-44cd-b91e-ec3aeb5a7762"
+    },
+    "Ui\\bg.png.meta": {
+      "time": 1775630918046.2693
+    },
+    "Ui\\bg.png": {
+      "time": 1775630873953.1274,
+      "uuid": "38dd0eed-a699-447a-9135-84d70e2b7a67"
+    }
+  },
+  "missing": {}
+}
