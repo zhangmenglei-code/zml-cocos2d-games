@@ -514,7 +514,7 @@
       ]
     },
     "cce:/internal/x/prerequisite-imports": {
-      "mTimestamp": 12812989.4226,
+      "mTimestamp": 128065610.4148,
       "chunkId": "6d8fd2b0177941b032ddc0733af48a561fb60657",
       "imports": [
         {
@@ -1240,7 +1240,7 @@
     },
     "file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts": {
       "mTimestamp": {
-        "mtime": 1775637188216.1858,
+        "mtime": 1775752498110.9746,
         "uuid": "028aadf8-66af-44cd-b91e-ec3aeb5a7762"
       },
       "chunkId": "d91cba3dc64e6c36ab0f9e99cb0b08fe3e2838c7",
@@ -1256,11 +1256,11 @@
           "loc": {
             "start": {
               "line": 1,
-              "column": 44
+              "column": 92
             },
             "end": {
               "line": 1,
-              "column": 48
+              "column": 96
             }
           }
         }

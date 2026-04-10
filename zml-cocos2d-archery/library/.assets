@@ -9,7 +9,9 @@
             "Ui\\jian.png",
             "Ui\\lunpan.png",
             "code\\player.ts",
-            "Ui\\bg.png"
+            "Ui\\bg.png",
+            "Prefab",
+            "Prefab\\jian.prefab"
         ]
     }
 }

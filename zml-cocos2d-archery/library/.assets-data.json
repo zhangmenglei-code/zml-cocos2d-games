@@ -20,7 +20,7 @@
       "depends": [
         "38dd0eed-a699-447a-9135-84d70e2b7a67@f9941",
         "23435c33-17ff-4c3d-af9c-56e263fba632@f9941",
-        "a8dc3465-48bf-4e08-88b3-9a1dfd155a19@f9941"
+        "0ef4f438-7b6f-4cb1-bbac-ea7c5cb7c4d3"
       ],
       "dependScripts": [
         "028aadf8-66af-44cd-b91e-ec3aeb5a7762"
@@ -153,5 +153,20 @@
       ]
     },
     "versionCode": 1
+  },
+  "80f3c576-b1aa-46ac-9564-1efadb438428": {
+    "url": "db://assets/Prefab",
+    "value": {},
+    "versionCode": 1
+  },
+  "0ef4f438-7b6f-4cb1-bbac-ea7c5cb7c4d3": {
+    "url": "db://assets/Prefab/jian.prefab",
+    "value": {
+      "depends": [
+        "a8dc3465-48bf-4e08-88b3-9a1dfd155a19@f9941"
+      ],
+      "dependScripts": []
+    },
+    "versionCode": 2
   }
 }

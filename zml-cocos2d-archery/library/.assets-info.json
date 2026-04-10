@@ -26,7 +26,7 @@
       "time": 1775625023121.1074
     },
     "Scene\\C1.scene": {
-      "time": 1775655275411.5557,
+      "time": 1775752503595.5515,
       "uuid": "bb496d75-d15b-4ced-95b3-9abdbbee7b51"
     },
     "Ui\\jian.png.meta": {
@@ -47,7 +47,7 @@
       "time": 1775628286844.4585
     },
     "code\\player.ts": {
-      "time": 1775637188216.1858,
+      "time": 1775752498110.9746,
       "uuid": "028aadf8-66af-44cd-b91e-ec3aeb5a7762"
     },
     "Ui\\bg.png.meta": {
@@ -56,6 +56,20 @@
     "Ui\\bg.png": {
       "time": 1775630873953.1274,
       "uuid": "38dd0eed-a699-447a-9135-84d70e2b7a67"
+    },
+    "Prefab.meta": {
+      "time": 1775746837639.8506
+    },
+    "Prefab": {
+      "time": 1775746840864.6565,
+      "uuid": "80f3c576-b1aa-46ac-9564-1efadb438428"
+    },
+    "Prefab\\jian.prefab.meta": {
+      "time": 1775746840869.0684
+    },
+    "Prefab\\jian.prefab": {
+      "time": 1775749092707.6172,
+      "uuid": "0ef4f438-7b6f-4cb1-bbac-ea7c5cb7c4d3"
     }
   },
   "missing": {}
