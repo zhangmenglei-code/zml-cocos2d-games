@@ -142,6 +142,10 @@
       },
       "timestamp": 1775622686063
     },
+    "6a5019a719a9014c047e67aa1cf34453ab8392ce": {
+      "imports": {},
+      "timestamp": 1775624441919
+    },
     "93ba276ea7b26ffcdc433fab14afc1ed6f05647b": {
       "imports": {
         "__unresolved_0": {
@@ -189,7 +193,7 @@
         "__unresolved_14": {
           "resolved": {
             "type": "external",
-            "specifierOrURL": "cce:/internal/x/cc-fu/physics-2d-box2d"
+            "specifierOrURL": "cce:/internal/x/cc-fu/physics-2d-builtin"
           },
           "messages": []
         },
@@ -313,11 +317,7 @@
           "messages": []
         }
       },
-      "timestamp": 1775624441880
-    },
-    "6a5019a719a9014c047e67aa1cf34453ab8392ce": {
-      "imports": {},
-      "timestamp": 1775624441919
+      "timestamp": 1775834079742
     },
     "6d8fd2b0177941b032ddc0733af48a561fb60657": {
       "imports": {
@@ -371,7 +371,7 @@
           "messages": []
         }
       },
-      "timestamp": 1775752499932
+      "timestamp": 1775838186494
     },
     "d91cba3dc64e6c36ab0f9e99cb0b08fe3e2838c7": {
       "imports": {
@@ -383,7 +383,7 @@
           "messages": []
         }
       },
-      "timestamp": 1775752500018
+      "timestamp": 1775838186546
     }
   },
   "entries": {

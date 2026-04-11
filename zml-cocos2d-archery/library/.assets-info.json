@@ -19,14 +19,14 @@
       "time": 1775624984114.252
     },
     "code": {
-      "time": 1775628286842.4526,
+      "time": 1775788730871.761,
       "uuid": "79ce3377-5518-4a40-af99-8108419a24a6"
     },
     "Scene\\C1.scene.meta": {
       "time": 1775625023121.1074
     },
     "Scene\\C1.scene": {
-      "time": 1775752503595.5515,
+      "time": 1775876314250.0222,
       "uuid": "bb496d75-d15b-4ced-95b3-9abdbbee7b51"
     },
     "Ui\\jian.png.meta": {
@@ -47,7 +47,7 @@
       "time": 1775628286844.4585
     },
     "code\\player.ts": {
-      "time": 1775752498110.9746,
+      "time": 1775838175756.1714,
       "uuid": "028aadf8-66af-44cd-b91e-ec3aeb5a7762"
     },
     "Ui\\bg.png.meta": {
@@ -68,8 +68,22 @@
       "time": 1775746840869.0684
     },
     "Prefab\\jian.prefab": {
-      "time": 1775749092707.6172,
+      "time": 1775834294087.139,
       "uuid": "0ef4f438-7b6f-4cb1-bbac-ea7c5cb7c4d3"
+    },
+    "Animation.meta": {
+      "time": 1775837547906.0273
+    },
+    "Animation": {
+      "time": 1775837608267.2861,
+      "uuid": "98858e2c-fed8-45b2-826b-7ea7422f465a"
+    },
+    "Animation\\animation.anim.meta": {
+      "time": 1775837608277.4998
+    },
+    "Animation\\animation.anim": {
+      "time": 1775837889852.985,
+      "uuid": "fb72513e-2c65-429b-bd00-dffc50d62e61"
     }
   },
   "missing": {}

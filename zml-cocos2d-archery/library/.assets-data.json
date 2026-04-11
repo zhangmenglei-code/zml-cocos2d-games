@@ -20,7 +20,12 @@
       "depends": [
         "38dd0eed-a699-447a-9135-84d70e2b7a67@f9941",
         "23435c33-17ff-4c3d-af9c-56e263fba632@f9941",
-        "0ef4f438-7b6f-4cb1-bbac-ea7c5cb7c4d3"
+        "0ef4f438-7b6f-4cb1-bbac-ea7c5cb7c4d3",
+        "7d8f9b89-4fd1-4c9f-a3ab-38ec7cded7ca@f9941",
+        "20835ba4-6145-4fbc-a58a-051ce700aa3e@f9941",
+        "544e49d6-3f05-4fa8-9a9e-091f98fc2ce8@f9941",
+        "951249e0-9f16-456d-8b85-a6ca954da16b@f9941",
+        "fb72513e-2c65-429b-bd00-dffc50d62e61"
       ],
       "dependScripts": [
         "028aadf8-66af-44cd-b91e-ec3aeb5a7762"
@@ -166,6 +171,18 @@
         "a8dc3465-48bf-4e08-88b3-9a1dfd155a19@f9941"
       ],
       "dependScripts": []
+    },
+    "versionCode": 2
+  },
+  "98858e2c-fed8-45b2-826b-7ea7422f465a": {
+    "url": "db://assets/Animation",
+    "value": {},
+    "versionCode": 1
+  },
+  "fb72513e-2c65-429b-bd00-dffc50d62e61": {
+    "url": "db://assets/Animation/animation.anim",
+    "value": {
+      "depends": []
     },
     "versionCode": 2
   }

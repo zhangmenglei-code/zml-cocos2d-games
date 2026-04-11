@@ -1,7 +1,7 @@
 {
   "modules": {
     "cce:/internal/x/cc": {
-      "mTimestamp": 7709.6558,
+      "mTimestamp": 209644767.2182,
       "chunkId": "93ba276ea7b26ffcdc433fab14afc1ed6f05647b",
       "imports": [
         {
@@ -201,7 +201,7 @@
           }
         },
         {
-          "value": "cce:/internal/x/cc-fu/physics-2d-box2d",
+          "value": "cce:/internal/x/cc-fu/physics-2d-builtin",
           "resolved": "__unresolved_14",
           "loc": {
             "start": {
@@ -210,7 +210,7 @@
             },
             "end": {
               "line": 15,
-              "column": 54
+              "column": 56
             }
           }
         },
@@ -444,7 +444,7 @@
         {
           "resolved": {
             "type": "external",
-            "specifierOrURL": "cce:/internal/x/cc-fu/physics-2d-box2d"
+            "specifierOrURL": "cce:/internal/x/cc-fu/physics-2d-builtin"
           },
           "messages": []
         },
@@ -514,7 +514,7 @@
       ]
     },
     "cce:/internal/x/prerequisite-imports": {
-      "mTimestamp": 128065610.4148,
+      "mTimestamp": 213751587.6364,
       "chunkId": "6d8fd2b0177941b032ddc0733af48a561fb60657",
       "imports": [
         {
@@ -1240,7 +1240,7 @@
     },
     "file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-archery/assets/code/player.ts": {
       "mTimestamp": {
-        "mtime": 1775752498110.9746,
+        "mtime": 1775838175756.1714,
         "uuid": "028aadf8-66af-44cd-b91e-ec3aeb5a7762"
       },
       "chunkId": "d91cba3dc64e6c36ab0f9e99cb0b08fe3e2838c7",
@@ -1256,11 +1256,11 @@
           "loc": {
             "start": {
               "line": 1,
-              "column": 92
+              "column": 136
             },
             "end": {
               "line": 1,
-              "column": 96
+              "column": 140
             }
           }
         }

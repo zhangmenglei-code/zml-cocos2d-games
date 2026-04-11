@@ -1,7 +1,7 @@
 System.register(["cc"], function (_export, _context) {
   "use strict";
 
-  var _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, Input, input, instantiate, Node, Prefab, tween, Vec3, _dec, _dec2, _dec3, _dec4, _class, _class2, _descriptor, _descriptor2, _descriptor3, _crd, ccclass, property, player;
+  var _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Collider2D, Component, Contact2DType, director, Input, input, instantiate, Label, Node, Prefab, tween, Vec3, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _crd, ccclass, property, player;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -15,10 +15,14 @@ System.register(["cc"], function (_export, _context) {
       __checkObsolete__ = _cc.__checkObsolete__;
       __checkObsoleteInNamespace__ = _cc.__checkObsoleteInNamespace__;
       _decorator = _cc._decorator;
+      Collider2D = _cc.Collider2D;
       Component = _cc.Component;
+      Contact2DType = _cc.Contact2DType;
+      director = _cc.director;
       Input = _cc.Input;
       input = _cc.input;
       instantiate = _cc.instantiate;
+      Label = _cc.Label;
       Node = _cc.Node;
       Prefab = _cc.Prefab;
       tween = _cc.tween;
@@ -29,14 +33,14 @@ System.register(["cc"], function (_export, _context) {
 
       _cclegacy._RF.push({}, "028aa34Zq9Ezbke7DrrWndi", "player", undefined);
 
-      __checkObsolete__(['_decorator', 'Component', 'Input', 'input', 'instantiate', 'Node', 'Prefab', 'tween', 'Vec3']);
+      __checkObsolete__(['_decorator', 'Collider2D', 'Component', 'Contact2DType', 'director', 'Input', 'input', 'instantiate', 'Label', 'Node', 'Prefab', 'tween', 'Vec3']);
 
       ({
         ccclass,
         property
       } = _decorator);
 
-      _export("player", player = (_dec = ccclass('player'), _dec2 = property(Node), _dec3 = property(Prefab), _dec4 = property(Node), _dec(_class = (_class2 = class player extends Component {
+      _export("player", player = (_dec = ccclass('player'), _dec2 = property(Node), _dec3 = property(Prefab), _dec4 = property(Node), _dec5 = property(Node), _dec6 = property(Label), _dec7 = property(Label), _dec(_class = (_class2 = class player extends Component {
         constructor(...args) {
           super(...args);
 
@@ -48,6 +52,14 @@ System.register(["cc"], function (_export, _context) {
 
           // 存放箭节点
           _initializerDefineProperty(this, "Jian_Parent_Node", _descriptor3, this);
+
+          // 提示框节点
+          _initializerDefineProperty(this, "Tip_Node", _descriptor4, this);
+
+          _initializerDefineProperty(this, "Tip_Title_Node", _descriptor5, this);
+
+          // 总数
+          _initializerDefineProperty(this, "Total_Num_Node", _descriptor6, this);
 
           // 初始旋转角度
           this.Rotation_Num = 0;
@@ -61,8 +73,10 @@ System.register(["cc"], function (_export, _context) {
           this.Target_Distance = -243;
           // 存放所有发射的箭
           this.ArrowList = [];
-          // 防抖
-          this.is_Can_Fire = false;
+          // 是否碰撞
+          this.is_Collision = false;
+          // 总共发射的箭数量
+          this.Arrow_Num = 5;
         }
 
         onLoad() {
@@ -75,18 +89,25 @@ System.register(["cc"], function (_export, _context) {
 
 
         onTouchStart(event) {
-          if (this.is_Can_Fire) {
+          // 如果正在发射或者已经碰撞了，就不执行发射逻辑
+          if (this.is_Collision) {
             return;
           }
 
-          this.is_Can_Fire = true;
           const Arrow_Node_new = instantiate(this.Arrow_Prefab);
           Arrow_Node_new.setParent(this.Jian_Parent_Node);
-          tween(Arrow_Node_new).to(0.3, {
+          Arrow_Node_new.getComponent(Collider2D).on(Contact2DType.BEGIN_CONTACT, this.Begin_Contact, this);
+          tween(Arrow_Node_new).to(0.1, {
             position: new Vec3(0, this.Distance, 0)
           }).call(() => {
-            this.is_Can_Fire = false;
             this.Arrow_to_Target(Arrow_Node_new);
+            Arrow_Node_new.getComponent(Collider2D).off(Contact2DType.BEGIN_CONTACT, this.Begin_Contact, this);
+            this.Arrow_Num -= 1;
+            this.Total_Num_Node.string = '' + this.Arrow_Num;
+
+            if (this.Arrow_Num <= 0) {
+              this.onTip(true);
+            }
           }).start(); // 让箭节点向上移动
         } // 箭插到靶子上
 
@@ -99,18 +120,43 @@ System.register(["cc"], function (_export, _context) {
           Arrow_Node_new.setWorldPosition(worldPos); // 设置箭节点的世界坐标不变
 
           Arrow_Node_new.angle = -this.Target_Node.angle; // 设置箭节点的旋转角度与轮盘相反
+        } // 箭与靶子碰撞事件
+
+
+        Begin_Contact() {
+          this.onTip(false);
+        } // 处理提示框
+
+
+        onTip(isWin) {
+          input.off(Input.EventType.TOUCH_START, this.onTouchStart, this); // 取消触摸事件监听
+
+          this.is_Collision = true;
+          this.Tip_Node.active = true; // 显示提示框
+
+          if (isWin) {
+            this.Tip_Title_Node.string = '你赢了';
+          } else {
+            this.Tip_Title_Node.string = '你输了';
+          }
         } // 开始
 
 
         start() {
           this.Target_Node.angle = 0; // 初始化轮盘的旋转角度
-          // 创建第一支箭
+
+          this.Total_Num_Node.string = '' + this.Arrow_Num; // 创建第一支箭
           // this.Arrow_Node = instantiate(this.Arrow_Prefab); // 实例化箭的预载体
           // this.Arrow_Node.setParent(this.Jian_Parent_Node);
         } // 更新
 
 
         update(deltaTime) {
+          // 如果已经碰撞了，就不执行旋转逻辑
+          if (this.is_Collision) {
+            return;
+          }
+
           if (this.Rotation_Num >= 360) {
             // 旋转角度大于等于360时，重置旋转角度
             this.Rotation_Num = 0;
@@ -119,6 +165,11 @@ System.register(["cc"], function (_export, _context) {
           this.Rotation_Num += this.Rotation_Speed * deltaTime; // 每帧增加旋转角度
 
           this.Target_Node.angle = this.Rotation_Num; // 设置轮盘的旋转角度
+        } // 重新开始
+
+
+        onRestart() {
+          director.loadScene('C1');
         }
 
       }, (_descriptor = _applyDecoratedDescriptor(_class2.prototype, "Target_Node", [_dec2], {
@@ -136,6 +187,27 @@ System.register(["cc"], function (_export, _context) {
           return null;
         }
       }), _descriptor3 = _applyDecoratedDescriptor(_class2.prototype, "Jian_Parent_Node", [_dec4], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: function () {
+          return null;
+        }
+      }), _descriptor4 = _applyDecoratedDescriptor(_class2.prototype, "Tip_Node", [_dec5], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: function () {
+          return null;
+        }
+      }), _descriptor5 = _applyDecoratedDescriptor(_class2.prototype, "Tip_Title_Node", [_dec6], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: function () {
+          return null;
+        }
+      }), _descriptor6 = _applyDecoratedDescriptor(_class2.prototype, "Total_Num_Node", [_dec7], {
         configurable: true,
         enumerable: true,
         writable: true,

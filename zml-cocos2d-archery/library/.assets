@@ -11,7 +11,9 @@
             "code\\player.ts",
             "Ui\\bg.png",
             "Prefab",
-            "Prefab\\jian.prefab"
+            "Prefab\\jian.prefab",
+            "Animation",
+            "Animation\\animation.anim"
         ]
     }
 }
