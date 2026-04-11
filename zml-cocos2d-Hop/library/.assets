@@ -1,0 +1,22 @@
+{
+    "version": "1.0.1",
+    "data": {
+        "paths": [
+            "Animation",
+            "image",
+            "Prefab",
+            "Scene",
+            "Scripts",
+            "Scripts\\GameManager.ts",
+            "Scripts\\PlayerController.ts",
+            "Animation\\oneStep.anim",
+            "Animation\\twoStep.anim",
+            "image\\1-1-1.png",
+            "image\\1-1-2.png",
+            "image\\1-3.png",
+            "Prefab\\Box.prefab",
+            "Scene\\game.scene",
+            "Audio"
+        ]
+    }
+}

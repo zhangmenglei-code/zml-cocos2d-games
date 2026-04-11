@@ -1,0 +1,88 @@
+{
+  "imports": {
+    "cce:/internal/x/cc": "./chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js",
+    "cce:/internal/x/prerequisite-imports": "./chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js",
+    "file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts": "./chunks/30/306468591e32cee25ef754c33730d3fb31f5ee1c.js",
+    "file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts": "./chunks/1d/1d8a81082dcf4174bf1454441587bb41df75b6d3.js",
+    "file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts": "./chunks/93/93bb12c6899992ce44e8d5ddc7d66a01f4d1433f.js",
+    "file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts": "./chunks/9b/9b8cddb7b6dd91a299d4f54399806cabc5d5f853.js",
+    "file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts": "./chunks/c5/c5165284ba2c07ed3a57625104aa2b42b11938f1.js",
+    "file:///D:/cocos_editor/Creator/3.8.8/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts": "./chunks/db/db6c9719ceaf9abdcc6eddffdbbc4c229ae01870.js",
+    "file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-Hop/assets/Scripts/GameManager.ts": "./chunks/af/af48d4dd64127b1086bf6ccf6a7bc4f71f24a8a0.js",
+    "file:///D:/cocos_zml/zml-cocos2d-games/zml-cocos2d-Hop/assets/Scripts/PlayerController.ts": "./chunks/af/afc4440cc56e8babb36c32369373d55d94a2232c.js"
+  },
+  "scopes": {
+    "./chunks/af/afc4440cc56e8babb36c32369373d55d94a2232c.js": {
+      "cc": "./chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js"
+    },
+    "./chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js": {
+      "__unresolved_0": "cce:/internal/x/cc-fu/2d",
+      "__unresolved_1": "cce:/internal/x/cc-fu/sorting",
+      "__unresolved_10": "cce:/internal/x/cc-fu/graphics",
+      "__unresolved_11": "cce:/internal/x/cc-fu/intersection-2d",
+      "__unresolved_12": "cce:/internal/x/cc-fu/mask",
+      "__unresolved_13": "cce:/internal/x/cc-fu/particle-2d",
+      "__unresolved_14": "cce:/internal/x/cc-fu/physics-2d-box2d",
+      "__unresolved_15": "cce:/internal/x/cc-fu/physics-2d-framework",
+      "__unresolved_16": "cce:/internal/x/cc-fu/profiler",
+      "__unresolved_17": "cce:/internal/x/cc-fu/rich-text",
+      "__unresolved_18": "cce:/internal/x/cc-fu/spine",
+      "__unresolved_19": "cce:/internal/x/cc-fu/tiled-map",
+      "__unresolved_2": "cce:/internal/x/cc-fu/affine-transform",
+      "__unresolved_20": "cce:/internal/x/cc-fu/tween",
+      "__unresolved_21": "cce:/internal/x/cc-fu/ui",
+      "__unresolved_22": "cce:/internal/x/cc-fu/video",
+      "__unresolved_23": "cce:/internal/x/cc-fu/webview",
+      "__unresolved_3": "cce:/internal/x/cc-fu/animation",
+      "__unresolved_4": "cce:/internal/x/cc-fu/audio",
+      "__unresolved_5": "cce:/internal/x/cc-fu/base",
+      "__unresolved_6": "cce:/internal/x/cc-fu/custom-pipeline",
+      "__unresolved_7": "cce:/internal/x/cc-fu/dragon-bones",
+      "__unresolved_8": "cce:/internal/x/cc-fu/gfx-webgl",
+      "__unresolved_9": "cce:/internal/x/cc-fu/gfx-webgl2"
+    },
+    "./chunks/af/af48d4dd64127b1086bf6ccf6a7bc4f71f24a8a0.js": {
+      "__unresolved_0": "./chunks/6a/6a5019a719a9014c047e67aa1cf34453ab8392ce.js",
+      "__unresolved_1": "./chunks/af/afc4440cc56e8babb36c32369373d55d94a2232c.js",
+      "cc": "./chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js"
+    },
+    "./chunks/db/db6c9719ceaf9abdcc6eddffdbbc4c229ae01870.js": {
+      "cc": "./chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js"
+    },
+    "./chunks/c5/c5165284ba2c07ed3a57625104aa2b42b11938f1.js": {
+      "__unresolved_0": "./chunks/6a/6a5019a719a9014c047e67aa1cf34453ab8392ce.js",
+      "__unresolved_1": "./chunks/9b/9b8cddb7b6dd91a299d4f54399806cabc5d5f853.js",
+      "cc": "./chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js"
+    },
+    "./chunks/9b/9b8cddb7b6dd91a299d4f54399806cabc5d5f853.js": {
+      "cc": "./chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js"
+    },
+    "./chunks/93/93bb12c6899992ce44e8d5ddc7d66a01f4d1433f.js": {
+      "__unresolved_0": "./chunks/6a/6a5019a719a9014c047e67aa1cf34453ab8392ce.js",
+      "__unresolved_1": "./chunks/9b/9b8cddb7b6dd91a299d4f54399806cabc5d5f853.js",
+      "cc": "./chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js"
+    },
+    "./chunks/1d/1d8a81082dcf4174bf1454441587bb41df75b6d3.js": {
+      "__unresolved_0": "./chunks/6a/6a5019a719a9014c047e67aa1cf34453ab8392ce.js",
+      "__unresolved_1": "./chunks/93/93bb12c6899992ce44e8d5ddc7d66a01f4d1433f.js",
+      "cc": "./chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js"
+    },
+    "./chunks/30/306468591e32cee25ef754c33730d3fb31f5ee1c.js": {
+      "__unresolved_0": "./chunks/6a/6a5019a719a9014c047e67aa1cf34453ab8392ce.js",
+      "__unresolved_1": "./chunks/93/93bb12c6899992ce44e8d5ddc7d66a01f4d1433f.js",
+      "__unresolved_2": "./chunks/1d/1d8a81082dcf4174bf1454441587bb41df75b6d3.js",
+      "__unresolved_3": "./chunks/c5/c5165284ba2c07ed3a57625104aa2b42b11938f1.js",
+      "cc": "./chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js"
+    },
+    "./chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js": {
+      "__unresolved_0": "./chunks/30/306468591e32cee25ef754c33730d3fb31f5ee1c.js",
+      "__unresolved_1": "./chunks/1d/1d8a81082dcf4174bf1454441587bb41df75b6d3.js",
+      "__unresolved_2": "./chunks/93/93bb12c6899992ce44e8d5ddc7d66a01f4d1433f.js",
+      "__unresolved_3": "./chunks/9b/9b8cddb7b6dd91a299d4f54399806cabc5d5f853.js",
+      "__unresolved_4": "./chunks/c5/c5165284ba2c07ed3a57625104aa2b42b11938f1.js",
+      "__unresolved_5": "./chunks/db/db6c9719ceaf9abdcc6eddffdbbc4c229ae01870.js",
+      "__unresolved_6": "./chunks/af/af48d4dd64127b1086bf6ccf6a7bc4f71f24a8a0.js",
+      "__unresolved_7": "./chunks/af/afc4440cc56e8babb36c32369373d55d94a2232c.js"
+    }
+  }
+}

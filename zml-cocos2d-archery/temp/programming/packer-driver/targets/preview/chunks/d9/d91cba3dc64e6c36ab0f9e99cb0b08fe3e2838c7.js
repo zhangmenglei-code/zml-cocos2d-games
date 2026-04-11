@@ -1,7 +1,7 @@
 System.register(["cc"], function (_export, _context) {
   "use strict";
 
-  var _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Collider2D, Component, Contact2DType, director, Input, input, instantiate, Label, Node, Prefab, tween, Vec3, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _crd, ccclass, property, player;
+  var _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, AudioClip, AudioSource, Collider2D, Component, Contact2DType, director, Input, input, instantiate, Label, Node, Prefab, tween, Vec3, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _crd, ccclass, property, player;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -15,6 +15,8 @@ System.register(["cc"], function (_export, _context) {
       __checkObsolete__ = _cc.__checkObsolete__;
       __checkObsoleteInNamespace__ = _cc.__checkObsoleteInNamespace__;
       _decorator = _cc._decorator;
+      AudioClip = _cc.AudioClip;
+      AudioSource = _cc.AudioSource;
       Collider2D = _cc.Collider2D;
       Component = _cc.Component;
       Contact2DType = _cc.Contact2DType;
@@ -33,14 +35,14 @@ System.register(["cc"], function (_export, _context) {
 
       _cclegacy._RF.push({}, "028aa34Zq9Ezbke7DrrWndi", "player", undefined);
 
-      __checkObsolete__(['_decorator', 'Collider2D', 'Component', 'Contact2DType', 'director', 'Input', 'input', 'instantiate', 'Label', 'Node', 'Prefab', 'tween', 'Vec3']);
+      __checkObsolete__(['_decorator', 'AudioClip', 'AudioSource', 'Collider2D', 'Component', 'Contact2DType', 'director', 'Input', 'input', 'instantiate', 'Label', 'Node', 'Prefab', 'tween', 'Vec3']);
 
       ({
         ccclass,
         property
       } = _decorator);
 
-      _export("player", player = (_dec = ccclass('player'), _dec2 = property(Node), _dec3 = property(Prefab), _dec4 = property(Node), _dec5 = property(Node), _dec6 = property(Label), _dec7 = property(Label), _dec(_class = (_class2 = class player extends Component {
+      _export("player", player = (_dec = ccclass('player'), _dec2 = property(Node), _dec3 = property(Prefab), _dec4 = property(Node), _dec5 = property(Node), _dec6 = property(Label), _dec7 = property(Label), _dec8 = property(AudioClip), _dec9 = property(AudioClip), _dec(_class = (_class2 = class player extends Component {
         constructor() {
           super(...arguments);
 
@@ -61,6 +63,11 @@ System.register(["cc"], function (_export, _context) {
           // 总数
           _initializerDefineProperty(this, "Total_Num_Node", _descriptor6, this);
 
+          // 音效
+          _initializerDefineProperty(this, "Sound_1_Clip", _descriptor7, this);
+
+          _initializerDefineProperty(this, "Sound_2_Clip", _descriptor8, this);
+
           // 初始旋转角度
           this.Rotation_Num = 0;
           // 每帧增加的旋转速度
@@ -76,7 +83,7 @@ System.register(["cc"], function (_export, _context) {
           // 是否碰撞
           this.is_Collision = false;
           // 总共发射的箭数量
-          this.Arrow_Num = 5;
+          this.Arrow_Num = 10;
         }
 
         onLoad() {
@@ -100,6 +107,11 @@ System.register(["cc"], function (_export, _context) {
           tween(Arrow_Node_new).to(0.1, {
             position: new Vec3(0, this.Distance, 0)
           }).call(() => {
+            // 这个判断防止最后一把剑，碰到了其他剑，然后触发了成功
+            if (this.is_Collision) {
+              return;
+            }
+
             this.Arrow_to_Target(Arrow_Node_new);
             Arrow_Node_new.getComponent(Collider2D).off(Contact2DType.BEGIN_CONTACT, this.Begin_Contact, this);
             this.Arrow_Num -= 1;
@@ -120,10 +132,13 @@ System.register(["cc"], function (_export, _context) {
           Arrow_Node_new.setWorldPosition(worldPos); // 设置箭节点的世界坐标不变
 
           Arrow_Node_new.angle = -this.Target_Node.angle; // 设置箭节点的旋转角度与轮盘相反
+
+          this.playSound1();
         } // 箭与靶子碰撞事件
 
 
         Begin_Contact() {
+          this.playSound2();
           this.onTip(false);
         } // 处理提示框
 
@@ -170,6 +185,20 @@ System.register(["cc"], function (_export, _context) {
 
         onRestart() {
           director.loadScene('C1');
+        } // 剑插在靶子上的声音
+
+
+        playSound1() {
+          var Audio = this.node.getComponent(AudioSource);
+          Audio.clip = this.Sound_1_Clip;
+          Audio.play();
+        } // 剑与其他的剑碰撞
+
+
+        playSound2() {
+          var Audio = this.node.getComponent(AudioSource);
+          Audio.clip = this.Sound_2_Clip;
+          Audio.play();
         }
 
       }, (_descriptor = _applyDecoratedDescriptor(_class2.prototype, "Target_Node", [_dec2], {
@@ -208,6 +237,20 @@ System.register(["cc"], function (_export, _context) {
           return null;
         }
       }), _descriptor6 = _applyDecoratedDescriptor(_class2.prototype, "Total_Num_Node", [_dec7], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: function initializer() {
+          return null;
+        }
+      }), _descriptor7 = _applyDecoratedDescriptor(_class2.prototype, "Sound_1_Clip", [_dec8], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: function initializer() {
+          return null;
+        }
+      }), _descriptor8 = _applyDecoratedDescriptor(_class2.prototype, "Sound_2_Clip", [_dec9], {
         configurable: true,
         enumerable: true,
         writable: true,

@@ -13,7 +13,12 @@
             "Prefab",
             "Prefab\\jian.prefab",
             "Animation",
-            "Animation\\animation.anim"
+            "Animation\\animation.anim",
+            "audio",
+            "audio\\jianpengzhuang.mp3",
+            "audio\\kanshu.mp3",
+            "Ui\\resetGame.png",
+            "audio\\bg.mp3"
         ]
     }
 }

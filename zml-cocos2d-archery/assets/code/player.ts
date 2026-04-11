@@ -1,4 +1,4 @@
-import { _decorator, Collider2D, Component, Contact2DType, director, Input, input, instantiate, Label, Node, Prefab, tween, Vec3 } from 'cc';
+import { _decorator, AudioClip, AudioSource, Collider2D, Component, Contact2DType, director, Input, input, instantiate, Label, Node, Prefab, tween, Vec3 } from 'cc';
 const { ccclass, property } = _decorator;
 
 @ccclass('player')
@@ -26,6 +26,12 @@ export class player extends Component {
     @property(Label)
     Total_Num_Node: Label = null;
 
+    // 音效
+    @property(AudioClip)
+    Sound_1_Clip: AudioClip = null;
+    @property(AudioClip)
+    Sound_2_Clip: AudioClip = null;
+
 
     // 初始旋转角度
     Rotation_Num: number = 0;
@@ -48,7 +54,7 @@ export class player extends Component {
     is_Collision: boolean = false;
 
     // 总共发射的箭数量
-    Arrow_Num: number = 5;
+    Arrow_Num: number = 10;
 
 
     protected onLoad(): void {
@@ -69,6 +75,10 @@ export class player extends Component {
         Arrow_Node_new.setParent(this.Jian_Parent_Node);
         Arrow_Node_new.getComponent(Collider2D).on(Contact2DType.BEGIN_CONTACT, this.Begin_Contact, this);
         tween(Arrow_Node_new).to(0.1, { position: new Vec3(0, this.Distance, 0) }).call(() => {
+            // 这个判断防止最后一把剑，碰到了其他剑，然后触发了成功
+            if (this.is_Collision) {
+                return
+            }
             this.Arrow_to_Target(Arrow_Node_new)
             Arrow_Node_new.getComponent(Collider2D).off(Contact2DType.BEGIN_CONTACT, this.Begin_Contact, this);
             this.Arrow_Num -= 1;
@@ -85,10 +95,12 @@ export class player extends Component {
         Arrow_Node_new.setParent(this.Target_Node); // 将箭节点设置为轮盘的子节点
         Arrow_Node_new.setWorldPosition(worldPos); // 设置箭节点的世界坐标不变
         Arrow_Node_new.angle = -this.Target_Node.angle; // 设置箭节点的旋转角度与轮盘相反
+        this.playSound1()
     }
 
     // 箭与靶子碰撞事件
     Begin_Contact() {
+        this.playSound2()
         this.onTip(false);
     }
 
@@ -129,5 +141,19 @@ export class player extends Component {
     // 重新开始
     onRestart() {
         director.loadScene('C1');
+    }
+
+    // 剑插在靶子上的声音
+    playSound1() {
+        const Audio = this.node.getComponent(AudioSource)
+        Audio.clip = this.Sound_1_Clip
+        Audio.play()
+    }
+
+    // 剑与其他的剑碰撞
+    playSound2() {
+        const Audio = this.node.getComponent(AudioSource)
+        Audio.clip = this.Sound_2_Clip
+        Audio.play()
     }
 }

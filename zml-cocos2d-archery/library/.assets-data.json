@@ -19,12 +19,13 @@
     "value": {
       "depends": [
         "38dd0eed-a699-447a-9135-84d70e2b7a67@f9941",
+        "6be76934-db2e-4433-82c3-283aeb742eba",
         "23435c33-17ff-4c3d-af9c-56e263fba632@f9941",
         "0ef4f438-7b6f-4cb1-bbac-ea7c5cb7c4d3",
+        "e812445b-3c23-42c6-9840-231710afb4fd",
+        "7efa4ed3-a708-4e39-8862-74b4cfaffd98",
         "7d8f9b89-4fd1-4c9f-a3ab-38ec7cded7ca@f9941",
-        "20835ba4-6145-4fbc-a58a-051ce700aa3e@f9941",
-        "544e49d6-3f05-4fa8-9a9e-091f98fc2ce8@f9941",
-        "951249e0-9f16-456d-8b85-a6ca954da16b@f9941",
+        "200206a0-6552-4f86-a458-2c60907040e4@f9941",
         "fb72513e-2c65-429b-bd00-dffc50d62e61"
       ],
       "dependScripts": [
@@ -185,5 +186,56 @@
       "depends": []
     },
     "versionCode": 2
+  },
+  "24f1eb8d-bdf7-4e52-9301-5f4b88e484a1": {
+    "url": "db://assets/audio",
+    "value": {},
+    "versionCode": 1
+  },
+  "7efa4ed3-a708-4e39-8862-74b4cfaffd98": {
+    "url": "db://assets/audio/jianpengzhuang.mp3",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "e812445b-3c23-42c6-9840-231710afb4fd": {
+    "url": "db://assets/audio/kanshu.mp3",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "200206a0-6552-4f86-a458-2c60907040e4": {
+    "url": "db://assets/Ui/resetGame.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "200206a0-6552-4f86-a458-2c60907040e4@6c48a": {
+    "url": "db://assets/Ui/resetGame.png@6c48a",
+    "value": {
+      "depends": [
+        "200206a0-6552-4f86-a458-2c60907040e4"
+      ]
+    },
+    "versionCode": 1
+  },
+  "200206a0-6552-4f86-a458-2c60907040e4@f9941": {
+    "url": "db://assets/Ui/resetGame.png@f9941",
+    "value": {
+      "depends": [
+        "200206a0-6552-4f86-a458-2c60907040e4@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "6be76934-db2e-4433-82c3-283aeb742eba": {
+    "url": "db://assets/audio/bg.mp3",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
   }
 }

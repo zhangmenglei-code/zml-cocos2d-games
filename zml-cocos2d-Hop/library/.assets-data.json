@@ -1,0 +1,163 @@
+{
+  "7ba162f3-e4bb-47c6-8a94-b76130ae120b": {
+    "url": "db://assets/Animation",
+    "value": {},
+    "versionCode": 1
+  },
+  "2059a5f7-907f-4d55-9817-a47b0d656696": {
+    "url": "db://assets/image",
+    "value": {},
+    "versionCode": 1
+  },
+  "81fdf74f-9181-4ae3-8d55-7f9adccbed05": {
+    "url": "db://assets/Prefab",
+    "value": {},
+    "versionCode": 1
+  },
+  "8465021b-d7c7-4cc3-a35e-b78ec9411082": {
+    "url": "db://assets/Scene",
+    "value": {},
+    "versionCode": 1
+  },
+  "8f9be5ac-fd38-435b-806c-dd5f251bf93d": {
+    "url": "db://assets/Scripts",
+    "value": {},
+    "versionCode": 1
+  },
+  "94f1c39c-93ec-43ac-8cca-c48318d181c7": {
+    "url": "db://assets/Scripts/GameManager.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "a7ec7e36-73e9-4b4e-8c04-82c6afedf94f": {
+    "url": "db://assets/Scripts/PlayerController.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "ef385763-a992-4b16-a4bf-ba98ec1a3223": {
+    "url": "db://assets/Animation/oneStep.anim",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 2
+  },
+  "498a6d6b-4314-4d4f-9fbb-13f56b4bca52": {
+    "url": "db://assets/Animation/twoStep.anim",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 2
+  },
+  "2f1fadf3-d3da-46c4-bc3e-86bb7a318565": {
+    "url": "db://assets/image/1-1-1.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "b5c0cc3e-68be-49bb-9a9f-bd0fa198f13b": {
+    "url": "db://assets/image/1-1-2.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "a774b42f-5b02-42f9-becc-54103bd022b9": {
+    "url": "db://assets/image/1-3.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "42218e22-407f-4dda-957f-1162eb3339b6": {
+    "url": "db://assets/Prefab/Box.prefab",
+    "value": {
+      "depends": [
+        "a774b42f-5b02-42f9-becc-54103bd022b9@f9941"
+      ],
+      "dependScripts": []
+    },
+    "versionCode": 2
+  },
+  "913a0bf5-236c-4d94-b1b5-d52d0fae1653": {
+    "url": "db://assets/Scene/game.scene",
+    "value": {
+      "depends": [
+        "2f1fadf3-d3da-46c4-bc3e-86bb7a318565@f9941",
+        "ef385763-a992-4b16-a4bf-ba98ec1a3223",
+        "498a6d6b-4314-4d4f-9fbb-13f56b4bca52",
+        "b5c0cc3e-68be-49bb-9a9f-bd0fa198f13b@f9941",
+        "42218e22-407f-4dda-957f-1162eb3339b6",
+        "b730527c-3233-41c2-aaf7-7cdab58f9749@f9941",
+        "20835ba4-6145-4fbc-a58a-051ce700aa3e@f9941",
+        "544e49d6-3f05-4fa8-9a9e-091f98fc2ce8@f9941",
+        "951249e0-9f16-456d-8b85-a6ca954da16b@f9941",
+        "84815d90-c3ae-4cc1-af3a-d1a0ad21a4f7"
+      ],
+      "dependScripts": [
+        "a7ec7e36-73e9-4b4e-8c04-82c6afedf94f",
+        "94f1c39c-93ec-43ac-8cca-c48318d181c7"
+      ]
+    },
+    "versionCode": 2
+  },
+  "b5c0cc3e-68be-49bb-9a9f-bd0fa198f13b@6c48a": {
+    "url": "db://assets/image/1-1-2.png@6c48a",
+    "value": {
+      "depends": [
+        "b5c0cc3e-68be-49bb-9a9f-bd0fa198f13b"
+      ]
+    },
+    "versionCode": 1
+  },
+  "a774b42f-5b02-42f9-becc-54103bd022b9@6c48a": {
+    "url": "db://assets/image/1-3.png@6c48a",
+    "value": {
+      "depends": [
+        "a774b42f-5b02-42f9-becc-54103bd022b9"
+      ]
+    },
+    "versionCode": 1
+  },
+  "2f1fadf3-d3da-46c4-bc3e-86bb7a318565@6c48a": {
+    "url": "db://assets/image/1-1-1.png@6c48a",
+    "value": {
+      "depends": [
+        "2f1fadf3-d3da-46c4-bc3e-86bb7a318565"
+      ]
+    },
+    "versionCode": 1
+  },
+  "2f1fadf3-d3da-46c4-bc3e-86bb7a318565@f9941": {
+    "url": "db://assets/image/1-1-1.png@f9941",
+    "value": {
+      "depends": [
+        "2f1fadf3-d3da-46c4-bc3e-86bb7a318565@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "a774b42f-5b02-42f9-becc-54103bd022b9@f9941": {
+    "url": "db://assets/image/1-3.png@f9941",
+    "value": {
+      "depends": [
+        "a774b42f-5b02-42f9-becc-54103bd022b9@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "b5c0cc3e-68be-49bb-9a9f-bd0fa198f13b@f9941": {
+    "url": "db://assets/image/1-1-2.png@f9941",
+    "value": {
+      "depends": [
+        "b5c0cc3e-68be-49bb-9a9f-bd0fa198f13b@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "dec2bc64-f8df-4c61-8303-7c66d0ba2345": {
+    "url": "db://assets/Audio",
+    "value": {},
+    "versionCode": 1
+  }
+}

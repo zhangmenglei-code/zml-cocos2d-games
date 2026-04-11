@@ -1,0 +1,111 @@
+{
+  "version": "1.0.1",
+  "map": {
+    "Animation": {
+      "time": 1775550720512.9355,
+      "uuid": "7ba162f3-e4bb-47c6-8a94-b76130ae120b"
+    },
+    "image": {
+      "time": 1775550720520.9744,
+      "uuid": "2059a5f7-907f-4d55-9817-a47b0d656696"
+    },
+    "Prefab": {
+      "time": 1775550720513.9382,
+      "uuid": "81fdf74f-9181-4ae3-8d55-7f9adccbed05"
+    },
+    "Scene": {
+      "time": 1775550720515.9573,
+      "uuid": "8465021b-d7c7-4cc3-a35e-b78ec9411082"
+    },
+    "Scripts": {
+      "time": 1775550720517.9646,
+      "uuid": "8f9be5ac-fd38-435b-806c-dd5f251bf93d"
+    },
+    "Scripts\\GameManager.ts": {
+      "time": 1775550720516.9607,
+      "uuid": "94f1c39c-93ec-43ac-8cca-c48318d181c7"
+    },
+    "Scripts\\PlayerController.ts": {
+      "time": 1775550720516.9607,
+      "uuid": "a7ec7e36-73e9-4b4e-8c04-82c6afedf94f"
+    },
+    "Animation.meta": {
+      "time": 1775550720510.7976
+    },
+    "image.meta": {
+      "time": 1775550720517.9646
+    },
+    "Prefab.meta": {
+      "time": 1775550720512.9355
+    },
+    "Scene.meta": {
+      "time": 1775550720514.9536
+    },
+    "Scripts.meta": {
+      "time": 1775550720515.9573
+    },
+    "Scripts\\GameManager.ts.meta": {
+      "time": 1775550720516.9607
+    },
+    "Scripts\\PlayerController.ts.meta": {
+      "time": 1775550720517.9646
+    },
+    "Animation\\oneStep.anim": {
+      "time": 1775550720510.7976,
+      "uuid": "ef385763-a992-4b16-a4bf-ba98ec1a3223"
+    },
+    "Animation\\twoStep.anim": {
+      "time": 1775550720511.931,
+      "uuid": "498a6d6b-4314-4d4f-9fbb-13f56b4bca52"
+    },
+    "image\\1-1-1.png": {
+      "time": 1775550720518.9673,
+      "uuid": "2f1fadf3-d3da-46c4-bc3e-86bb7a318565"
+    },
+    "image\\1-1-2.png": {
+      "time": 1775550720519.9717,
+      "uuid": "b5c0cc3e-68be-49bb-9a9f-bd0fa198f13b"
+    },
+    "image\\1-3.png": {
+      "time": 1775550720520.9744,
+      "uuid": "a774b42f-5b02-42f9-becc-54103bd022b9"
+    },
+    "Prefab\\Box.prefab": {
+      "time": 1775550720513.9382,
+      "uuid": "42218e22-407f-4dda-957f-1162eb3339b6"
+    },
+    "Scene\\game.scene": {
+      "time": 1775612901748.904,
+      "uuid": "913a0bf5-236c-4d94-b1b5-d52d0fae1653"
+    },
+    "Animation\\oneStep.anim.meta": {
+      "time": 1775550720511.931
+    },
+    "Animation\\twoStep.anim.meta": {
+      "time": 1775550720512.9355
+    },
+    "Prefab\\Box.prefab.meta": {
+      "time": 1775550720513.9382
+    },
+    "Scene\\game.scene.meta": {
+      "time": 1775550720515.9573
+    },
+    "image\\1-1-1.png.meta": {
+      "time": 1775550720518.9673
+    },
+    "image\\1-3.png.meta": {
+      "time": 1775550720520.9744
+    },
+    "image\\1-1-2.png.meta": {
+      "time": 1775550720519.9717
+    },
+    "Audio.meta": {
+      "time": 1775882413860.188
+    },
+    "Audio": {
+      "time": 1775882413856.5396,
+      "uuid": "dec2bc64-f8df-4c61-8303-7c66d0ba2345"
+    }
+  },
+  "missing": {}
+}

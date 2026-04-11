@@ -12,7 +12,7 @@
       "time": 1775624943130.2285
     },
     "Ui": {
-      "time": 1775630918002.0251,
+      "time": 1775880005541.1692,
       "uuid": "7d14f4d2-5875-45b7-9b44-96b864bd1781"
     },
     "code.meta": {
@@ -26,7 +26,7 @@
       "time": 1775625023121.1074
     },
     "Scene\\C1.scene": {
-      "time": 1775876314250.0222,
+      "time": 1775881708306.653,
       "uuid": "bb496d75-d15b-4ced-95b3-9abdbbee7b51"
     },
     "Ui\\jian.png.meta": {
@@ -47,7 +47,7 @@
       "time": 1775628286844.4585
     },
     "code\\player.ts": {
-      "time": 1775838175756.1714,
+      "time": 1775881945569.817,
       "uuid": "028aadf8-66af-44cd-b91e-ec3aeb5a7762"
     },
     "Ui\\bg.png.meta": {
@@ -84,6 +84,41 @@
     "Animation\\animation.anim": {
       "time": 1775837889852.985,
       "uuid": "fb72513e-2c65-429b-bd00-dffc50d62e61"
+    },
+    "audio.meta": {
+      "time": 1775879504762.232
+    },
+    "audio": {
+      "time": 1775880564240.339,
+      "uuid": "24f1eb8d-bdf7-4e52-9301-5f4b88e484a1"
+    },
+    "audio\\jianpengzhuang.mp3.meta": {
+      "time": 1775879504838.3943
+    },
+    "audio\\kanshu.mp3.meta": {
+      "time": 1775879504839.404
+    },
+    "audio\\jianpengzhuang.mp3": {
+      "time": 1775878939506.8809,
+      "uuid": "7efa4ed3-a708-4e39-8862-74b4cfaffd98"
+    },
+    "audio\\kanshu.mp3": {
+      "time": 1775878702709.6138,
+      "uuid": "e812445b-3c23-42c6-9840-231710afb4fd"
+    },
+    "Ui\\resetGame.png.meta": {
+      "time": 1775880005591.7273
+    },
+    "Ui\\resetGame.png": {
+      "time": 1775879966507.6138,
+      "uuid": "200206a0-6552-4f86-a458-2c60907040e4"
+    },
+    "audio\\bg.mp3.meta": {
+      "time": 1775880564255.9932
+    },
+    "audio\\bg.mp3": {
+      "time": 1699318005598.6729,
+      "uuid": "6be76934-db2e-4433-82c3-283aeb742eba"
     }
   },
   "missing": {}
