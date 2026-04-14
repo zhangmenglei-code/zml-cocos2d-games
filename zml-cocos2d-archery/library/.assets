@@ -2,23 +2,23 @@
     "version": "1.0.1",
     "data": {
         "paths": [
+            "Animation",
+            "audio",
+            "code",
+            "Prefab",
             "Scene",
             "Ui",
-            "code",
-            "Scene\\C1.scene",
-            "Ui\\jian.png",
-            "Ui\\lunpan.png",
             "code\\player.ts",
-            "Ui\\bg.png",
-            "Prefab",
-            "Prefab\\jian.prefab",
-            "Animation",
             "Animation\\animation.anim",
-            "audio",
+            "audio\\bg.mp3",
             "audio\\jianpengzhuang.mp3",
             "audio\\kanshu.mp3",
+            "Prefab\\jian.prefab",
+            "Scene\\C1.scene",
+            "Ui\\bg.png",
             "Ui\\resetGame.png",
-            "audio\\bg.mp3"
+            "Ui\\jian.png",
+            "Ui\\lunpan.png"
         ]
     }
 }

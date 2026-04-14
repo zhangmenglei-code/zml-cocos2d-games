@@ -71,19 +71,17 @@ System.register(["cc"], function (_export, _context) {
           // 初始旋转角度
           this.Rotation_Num = 0;
           // 每帧增加的旋转速度
-          this.Rotation_Speed = 50;
-          // 箭初始节点
-          this.Arrow_Node = null;
+          this.Rotation_Speed = 200;
           // 箭距离箭靶的距离（相对于父节点坐标）
           this.Distance = 44;
           // 箭距离箭靶的距离（相对于箭靶中心坐标）
           this.Target_Distance = -243;
-          // 存放所有发射的箭
-          this.ArrowList = [];
           // 是否碰撞
           this.is_Collision = false;
           // 总共发射的箭数量
-          this.Arrow_Num = 10;
+          this.Arrow_Num = 14;
+          // 剑飞行的时间
+          this.Arrow_Time = 0.1;
         }
 
         onLoad() {
@@ -96,26 +94,32 @@ System.register(["cc"], function (_export, _context) {
 
 
         onTouchStart(event) {
-          // 如果正在发射或者已经碰撞了，就不执行发射逻辑
+          // 如果正在发射或者正在碰撞，就不执行
           if (this.is_Collision) {
             return;
-          }
+          } // 创建一个剑
 
-          var Arrow_Node_new = instantiate(this.Arrow_Prefab);
-          Arrow_Node_new.setParent(this.Jian_Parent_Node);
-          Arrow_Node_new.getComponent(Collider2D).on(Contact2DType.BEGIN_CONTACT, this.Begin_Contact, this);
-          tween(Arrow_Node_new).to(0.1, {
+
+          var Arrow_Node = instantiate(this.Arrow_Prefab);
+          Arrow_Node.setParent(this.Jian_Parent_Node); // 监听碰撞事件
+
+          Arrow_Node.getComponent(Collider2D).on(Contact2DType.BEGIN_CONTACT, this.Begin_Contact, this); // 剑向上移动
+
+          tween(Arrow_Node).to(this.Arrow_Time, {
             position: new Vec3(0, this.Distance, 0)
           }).call(() => {
             // 这个判断防止最后一把剑，碰到了其他剑，然后触发了成功
             if (this.is_Collision) {
               return;
-            }
+            } // 箭插到靶子上
 
-            this.Arrow_to_Target(Arrow_Node_new);
-            Arrow_Node_new.getComponent(Collider2D).off(Contact2DType.BEGIN_CONTACT, this.Begin_Contact, this);
+
+            this.Arrow_to_Target(Arrow_Node); // 取消碰撞事件监听
+            // Arrow_Node.getComponent(Collider2D).off(Contact2DType.BEGIN_CONTACT, this.Begin_Contact, this);
+            // 减少箭的数量
+
             this.Arrow_Num -= 1;
-            this.Total_Num_Node.string = '' + this.Arrow_Num;
+            this.Total_Num_Node.string = '' + this.Arrow_Num; // 如果没有箭了，就提示玩家赢了
 
             if (this.Arrow_Num <= 0) {
               this.onTip(true);
@@ -132,9 +136,17 @@ System.register(["cc"], function (_export, _context) {
           Arrow_Node_new.setWorldPosition(worldPos); // 设置箭节点的世界坐标不变
 
           Arrow_Node_new.angle = -this.Target_Node.angle; // 设置箭节点的旋转角度与轮盘相反
+          // 设置箭节点的碰撞组为2，表示可以与这个碰撞组进行碰撞
+
+          var collider = Arrow_Node_new.getComponent(Collider2D);
+
+          if (collider) {
+            collider.group = 2;
+          } // 播放音效
+
 
           this.playSound1();
-        } // 箭与靶子碰撞事件
+        } // 剑与其他的剑碰撞事件
 
 
         Begin_Contact() {
@@ -146,23 +158,21 @@ System.register(["cc"], function (_export, _context) {
         onTip(isWin) {
           input.off(Input.EventType.TOUCH_START, this.onTouchStart, this); // 取消触摸事件监听
 
-          this.is_Collision = true;
+          this.is_Collision = true; // 清除所有剑的碰撞事件监听
+
+          this.Jian_Parent_Node.children.forEach(child => {
+            child.getComponent(Collider2D).off(Contact2DType.BEGIN_CONTACT, this.Begin_Contact, this);
+          });
           this.Tip_Node.active = true; // 显示提示框
 
-          if (isWin) {
-            this.Tip_Title_Node.string = '你赢了';
-          } else {
-            this.Tip_Title_Node.string = '你输了';
-          }
+          this.Tip_Title_Node.string = isWin ? '你赢了' : '你输了';
         } // 开始
 
 
         start() {
           this.Target_Node.angle = 0; // 初始化轮盘的旋转角度
 
-          this.Total_Num_Node.string = '' + this.Arrow_Num; // 创建第一支箭
-          // this.Arrow_Node = instantiate(this.Arrow_Prefab); // 实例化箭的预载体
-          // this.Arrow_Node.setParent(this.Jian_Parent_Node);
+          this.Total_Num_Node.string = '' + this.Arrow_Num;
         } // 更新
 
 

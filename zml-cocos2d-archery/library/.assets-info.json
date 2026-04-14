@@ -12,7 +12,7 @@
       "time": 1775624943130.2285
     },
     "Ui": {
-      "time": 1775880005541.1692,
+      "time": 1776153993878.598,
       "uuid": "7d14f4d2-5875-45b7-9b44-96b864bd1781"
     },
     "code.meta": {
@@ -26,28 +26,14 @@
       "time": 1775625023121.1074
     },
     "Scene\\C1.scene": {
-      "time": 1775881708306.653,
+      "time": 1776173875344.3674,
       "uuid": "bb496d75-d15b-4ced-95b3-9abdbbee7b51"
-    },
-    "Ui\\jian.png.meta": {
-      "time": 1775627664971.0525
-    },
-    "Ui\\jian.png": {
-      "time": 1775627603245.2517,
-      "uuid": "a8dc3465-48bf-4e08-88b3-9a1dfd155a19"
-    },
-    "Ui\\lunpan.png.meta": {
-      "time": 1775628133040.9004
-    },
-    "Ui\\lunpan.png": {
-      "time": 1775628098299.0115,
-      "uuid": "23435c33-17ff-4c3d-af9c-56e263fba632"
     },
     "code\\player.ts.meta": {
       "time": 1775628286844.4585
     },
     "code\\player.ts": {
-      "time": 1775881945569.817,
+      "time": 1776171836256.4556,
       "uuid": "028aadf8-66af-44cd-b91e-ec3aeb5a7762"
     },
     "Ui\\bg.png.meta": {
@@ -68,7 +54,7 @@
       "time": 1775746840869.0684
     },
     "Prefab\\jian.prefab": {
-      "time": 1775834294087.139,
+      "time": 1776168835030.4895,
       "uuid": "0ef4f438-7b6f-4cb1-bbac-ea7c5cb7c4d3"
     },
     "Animation.meta": {
@@ -119,6 +105,20 @@
     "audio\\bg.mp3": {
       "time": 1699318005598.6729,
       "uuid": "6be76934-db2e-4433-82c3-283aeb742eba"
+    },
+    "Ui\\jian.png.meta": {
+      "time": 1776153993939.6501
+    },
+    "Ui\\lunpan.png.meta": {
+      "time": 1776153993892.266
+    },
+    "Ui\\lunpan.png": {
+      "time": 1776125082000,
+      "uuid": "f900c434-a0b5-4a12-81f3-20b714973382"
+    },
+    "Ui\\jian.png": {
+      "time": 1776125080000,
+      "uuid": "32706db0-12a8-4637-897a-132eeeba5b8b"
     }
   },
   "missing": {}

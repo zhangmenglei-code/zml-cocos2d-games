@@ -20,7 +20,7 @@
       "depends": [
         "38dd0eed-a699-447a-9135-84d70e2b7a67@f9941",
         "6be76934-db2e-4433-82c3-283aeb742eba",
-        "23435c33-17ff-4c3d-af9c-56e263fba632@f9941",
+        "f900c434-a0b5-4a12-81f3-20b714973382@f9941",
         "0ef4f438-7b6f-4cb1-bbac-ea7c5cb7c4d3",
         "e812445b-3c23-42c6-9840-231710afb4fd",
         "7efa4ed3-a708-4e39-8862-74b4cfaffd98",
@@ -82,9 +82,7 @@
   },
   "a8dc3465-48bf-4e08-88b3-9a1dfd155a19": {
     "url": "db://assets/Ui/jian.png",
-    "value": {
-      "depends": []
-    },
+    "value": {},
     "versionCode": 1
   },
   "a8dc3465-48bf-4e08-88b3-9a1dfd155a19@6c48a": {
@@ -107,9 +105,7 @@
   },
   "23435c33-17ff-4c3d-af9c-56e263fba632": {
     "url": "db://assets/Ui/lunpan.png",
-    "value": {
-      "depends": []
-    },
+    "value": {},
     "versionCode": 1
   },
   "23435c33-17ff-4c3d-af9c-56e263fba632@6c48a": {
@@ -169,7 +165,7 @@
     "url": "db://assets/Prefab/jian.prefab",
     "value": {
       "depends": [
-        "a8dc3465-48bf-4e08-88b3-9a1dfd155a19@f9941"
+        "32706db0-12a8-4637-897a-132eeeba5b8b@f9941"
       ],
       "dependScripts": []
     },
@@ -235,6 +231,148 @@
     "url": "db://assets/audio/bg.mp3",
     "value": {
       "depends": []
+    },
+    "versionCode": 1
+  },
+  "ba047841-c5d5-47a6-9217-3e122f663a55": {
+    "url": "db://assets/Ui/jian-1.png",
+    "value": {},
+    "versionCode": 1
+  },
+  "ba047841-c5d5-47a6-9217-3e122f663a55@6c48a": {
+    "url": "db://assets/Ui/jian-1.png@6c48a",
+    "value": {
+      "depends": [
+        "ba047841-c5d5-47a6-9217-3e122f663a55"
+      ]
+    },
+    "versionCode": 1
+  },
+  "ba047841-c5d5-47a6-9217-3e122f663a55@f9941": {
+    "url": "db://assets/Ui/jian-1.png@f9941",
+    "value": {
+      "depends": [
+        "ba047841-c5d5-47a6-9217-3e122f663a55@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "94e979b9-a393-45ad-9da2-40cd6deeabc7": {
+    "url": "db://assets/Ui/jianba.png",
+    "value": {},
+    "versionCode": 1
+  },
+  "94e979b9-a393-45ad-9da2-40cd6deeabc7@6c48a": {
+    "url": "db://assets/Ui/jianba.png@6c48a",
+    "value": {
+      "depends": [
+        "94e979b9-a393-45ad-9da2-40cd6deeabc7"
+      ]
+    },
+    "versionCode": 1
+  },
+  "94e979b9-a393-45ad-9da2-40cd6deeabc7@f9941": {
+    "url": "db://assets/Ui/jianba.png@f9941",
+    "value": {
+      "depends": [
+        "94e979b9-a393-45ad-9da2-40cd6deeabc7@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "7ab989f4-9387-48de-be05-0749098bf71d": {
+    "url": "db://assets/Ui/jian-1.png",
+    "value": {},
+    "versionCode": 1
+  },
+  "21a52e5d-4c23-45f8-98c2-c64e3e418a9e": {
+    "url": "db://assets/Ui/jianba.png",
+    "value": {},
+    "versionCode": 1
+  },
+  "7ab989f4-9387-48de-be05-0749098bf71d@6c48a": {
+    "url": "db://assets/Ui/jian-1.png@6c48a",
+    "value": {
+      "depends": [
+        "7ab989f4-9387-48de-be05-0749098bf71d"
+      ]
+    },
+    "versionCode": 1
+  },
+  "21a52e5d-4c23-45f8-98c2-c64e3e418a9e@6c48a": {
+    "url": "db://assets/Ui/jianba.png@6c48a",
+    "value": {
+      "depends": [
+        "21a52e5d-4c23-45f8-98c2-c64e3e418a9e"
+      ]
+    },
+    "versionCode": 1
+  },
+  "7ab989f4-9387-48de-be05-0749098bf71d@f9941": {
+    "url": "db://assets/Ui/jian-1.png@f9941",
+    "value": {
+      "depends": [
+        "7ab989f4-9387-48de-be05-0749098bf71d@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "21a52e5d-4c23-45f8-98c2-c64e3e418a9e@f9941": {
+    "url": "db://assets/Ui/jianba.png@f9941",
+    "value": {
+      "depends": [
+        "21a52e5d-4c23-45f8-98c2-c64e3e418a9e@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "32706db0-12a8-4637-897a-132eeeba5b8b": {
+    "url": "db://assets/Ui/jian.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "f900c434-a0b5-4a12-81f3-20b714973382": {
+    "url": "db://assets/Ui/lunpan.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "32706db0-12a8-4637-897a-132eeeba5b8b@6c48a": {
+    "url": "db://assets/Ui/jian.png@6c48a",
+    "value": {
+      "depends": [
+        "32706db0-12a8-4637-897a-132eeeba5b8b"
+      ]
+    },
+    "versionCode": 1
+  },
+  "f900c434-a0b5-4a12-81f3-20b714973382@6c48a": {
+    "url": "db://assets/Ui/lunpan.png@6c48a",
+    "value": {
+      "depends": [
+        "f900c434-a0b5-4a12-81f3-20b714973382"
+      ]
+    },
+    "versionCode": 1
+  },
+  "f900c434-a0b5-4a12-81f3-20b714973382@f9941": {
+    "url": "db://assets/Ui/lunpan.png@f9941",
+    "value": {
+      "depends": [
+        "f900c434-a0b5-4a12-81f3-20b714973382@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "32706db0-12a8-4637-897a-132eeeba5b8b@f9941": {
+    "url": "db://assets/Ui/jian.png@f9941",
+    "value": {
+      "depends": [
+        "32706db0-12a8-4637-897a-132eeeba5b8b@6c48a"
+      ]
     },
     "versionCode": 1
   }
