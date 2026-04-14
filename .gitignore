@@ -1,0 +1,10 @@
+**/library/
+**/temp/
+**/local/
+
+**/build/
+**/build-templates/
+
+**/.idea/
+**/.vscode/
+**/.creator/
