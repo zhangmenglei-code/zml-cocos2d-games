@@ -39,10 +39,10 @@ export class player extends Component {
     Rotation_Speed: number = 200;
 
     // 箭距离箭靶的距离（相对于父节点坐标）
-    Distance: number = 44;
+    Distance: number = 50;
 
     // 箭距离箭靶的距离（相对于箭靶中心坐标）
-    Target_Distance: number = -243;
+    Target_Distance: number = -239;
 
     // 是否碰撞
     is_Collision: boolean = false;
