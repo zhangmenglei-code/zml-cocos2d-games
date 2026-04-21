@@ -1,4 +1,5 @@
-import { _decorator, Component, instantiate, math, Node, Prefab } from 'cc';
+import { _decorator, CCFloat, Component, instantiate, math, Prefab } from 'cc';
+import { EventManager } from './EventManager';
 const { ccclass, property } = _decorator;
 
 @ccclass('EnemyManage')
@@ -7,20 +8,24 @@ export class EnemyManage extends Component {
     // 敌人1
     @property(Prefab)
     enemyPrefab1: Prefab = null;
-    @property({ type: Number, tooltip: '敌人1生成速度' })
+    @property({ type: CCFloat, tooltip: '敌人1生成速度' })
     enemy1CreatSpeed: number = 1;
 
     // 敌人2
     @property(Prefab)
     enemyPrefab2: Prefab = null;
-    @property({ type: Number, tooltip: '敌人2生成速度' })
+    @property({ type: CCFloat, tooltip: '敌人2生成速度' })
     enemy2CreatSpeed: number = 3;
 
     // 敌人3
     @property(Prefab)
     enemyPrefab3: Prefab = null;
-    @property({ type: Number, tooltip: '敌人3生成速度' })
+    @property({ type: CCFloat, tooltip: '敌人3生成速度' })
     enemy3CreatSpeed: number = 5;
+
+    protected onLoad(): void {
+        EventManager.on('GameOver', this.onGameOver, this);
+    }
 
     start() {
         this.schedule(this.createEnemy1, this.enemy1CreatSpeed);
@@ -33,6 +38,7 @@ export class EnemyManage extends Component {
     }
 
     protected onDestroy(): void {
+        EventManager.off('GameOver', this.onGameOver, this);
         this.unschedule(this.createEnemy1);
         this.unschedule(this.createEnemy2);
         this.unschedule(this.createEnemy3);
@@ -61,6 +67,12 @@ export class EnemyManage extends Component {
         this.node.addChild(enemy);
         // 设置世界坐标
         enemy.setPosition(randomX, y, 0);
+    }
+
+    onGameOver() {
+        this.unschedule(this.createEnemy1);
+        this.unschedule(this.createEnemy2);
+        this.unschedule(this.createEnemy3);
     }
 }
 

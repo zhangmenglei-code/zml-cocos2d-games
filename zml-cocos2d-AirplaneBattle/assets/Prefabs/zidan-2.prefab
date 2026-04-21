@@ -173,20 +173,20 @@
       "__id__": 9
     },
     "tag": 0,
-    "_group": 1,
+    "_group": 4,
     "_density": 1,
-    "_sensor": false,
+    "_sensor": true,
     "_friction": 0.2,
     "_restitution": 0,
     "_offset": {
       "__type__": "cc.Vec2",
       "x": 0,
-      "y": 0
+      "y": 0.3
     },
     "_size": {
       "__type__": "cc.Size",
       "width": 9.1,
-      "height": 21
+      "height": 13.5
     },
     "_id": ""
   },
@@ -209,7 +209,7 @@
     "enabledContactListener": true,
     "bullet": false,
     "awakeOnLoad": true,
-    "_group": 1,
+    "_group": 4,
     "_type": 1,
     "_allowSleep": true,
     "_gravityScale": 1,

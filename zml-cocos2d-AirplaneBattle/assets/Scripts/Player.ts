@@ -1,5 +1,7 @@
-import { _decorator, Component, EventTouch, Input, input, instantiate, Node, Prefab, Vec3 } from 'cc';
+import { _decorator, Animation, AudioSource, CCFloat, CCInteger, Collider2D, Component, Contact2DType, director, EventTouch, Input, input, instantiate, Node, Prefab, Vec3 } from 'cc';
+import { EventManager } from './EventManager';
 const { ccclass, property } = _decorator;
+
 
 // 子弹类型
 enum BulletType {
@@ -10,12 +12,7 @@ enum BulletType {
 @ccclass('Player')
 export class Player extends Component {
 
-    // 左右边界
-    moveX: number = 350;
-    // 上下边界
-    moveY: number = 570;
-
-    @property({type: Number, tooltip: '子弹发射频率(快0 - 慢1)'})
+    @property({type: CCFloat, tooltip: '子弹发射频率(快0 - 慢1)'})
     bulletTime: number = 0.5;
 
     @property({type: Prefab, tooltip: '子弹1预制体'})
@@ -35,11 +32,34 @@ export class Player extends Component {
     @property({ type: Node, tooltip: '子弹类型2-2的世界坐标' })
     bulletWorldPosition2_2: Node = null;
 
-    // 计时器
-    bulletTimer: number = 0;
+    @property({ type: Node, tooltip: '玩家体节点' })
+    playerNode: Node = null;
 
     // 子弹类型
-    bulletType: BulletType = BulletType.two;
+    @property({type: CCInteger, tooltip: '子弹类型'})
+    bulletType: BulletType = BulletType.one;
+
+    // 子弹发射音效
+    @property({ type: AudioSource, tooltip: '子弹发射音效' })
+    bulletSound: AudioSource = null;
+    // 死亡音效
+    @property({ type: AudioSource, tooltip: '死亡音效' })
+    dieSound: AudioSource = null;
+
+    // 左右边界
+    moveX: number = 350;
+    // 上下边界
+    moveY: number = 570;
+
+    // 计时器
+    bulletTimer: number = 0;
+    // 血量
+    hp: number = 1;
+    // 死亡
+    isDead: boolean = false;
+
+    // 子节点飞机动画
+    private childAnim: Animation = null;
 
     protected onLoad(): void {
         // 监听触摸
@@ -49,6 +69,11 @@ export class Player extends Component {
     protected onDestroy(): void {
         // 移除触摸
         input.off(Input.EventType.TOUCH_MOVE, this.onTouchMove, this);
+        // 移除碰撞
+        let collider = this.getComponent(Collider2D);
+        if (collider) {
+            collider.off(Contact2DType.BEGIN_CONTACT, this.beginContact, this)
+        }
     }
 
     // 触摸移动
@@ -76,10 +101,44 @@ export class Player extends Component {
     }
 
     start() {
+        // 碰撞组件
+        let collider = this.getComponent(Collider2D);
+        if (collider) {
+            collider.on(Contact2DType.BEGIN_CONTACT, this.beginContact, this)
+        }
+        // 获取子节点动画组件
+        this.childAnim = this.playerNode.getComponent(Animation);
+    }
 
+    // 碰撞
+    beginContact() {
+        this.hp -= 1
+        // 玩家死亡
+        if (this.hp <= 0) {
+            this.isDead = true;
+            // 触摸停止
+            input.off(Input.EventType.TOUCH_MOVE, this.onTouchMove, this);
+            // 禁用碰撞组件
+            this.getComponent(Collider2D).enabled = false;
+            // 向外告知游戏结束
+            EventManager.emit('GameOver');
+            // 播放死亡音效
+            this.dieSound.play();
+            // 播放死亡动画
+            this.childAnim.play('PlayerBody-hit')
+            // // 播放动画结束
+            // this.childAnim.once(Animation.EventType.FINISHED, () => {
+            //     this.node.destroy()
+            // }, this)
+        } else {
+            // 只碰撞，但是没死，玩家闪烁，处于无敌状态
+        }
     }
 
     update(deltaTime: number) {
+        if (this.isDead) {
+            return;
+        }
         switch (this.bulletType) {
             case BulletType.one:
                 this.oneBullet(deltaTime)
@@ -101,6 +160,8 @@ export class Player extends Component {
             this.bulletParent.addChild(bullet);
             // 设置世界坐标
             bullet.setWorldPosition(this.bulletWorldPosition1.worldPosition);
+            // 播放子弹发射音效
+            this.bulletSound.play();
         }
     }
     // 子弹类型2
@@ -117,6 +178,8 @@ export class Player extends Component {
             // 设置世界坐标
             bullet1.setWorldPosition(this.bulletWorldPosition2_1.worldPosition);
             bullet2.setWorldPosition(this.bulletWorldPosition2_2.worldPosition);
+            // 播放子弹发射音效
+            this.bulletSound.play();
         }
     }
 }

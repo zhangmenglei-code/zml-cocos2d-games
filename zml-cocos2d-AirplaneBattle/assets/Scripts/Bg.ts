@@ -1,4 +1,5 @@
-import { _decorator, Component, Node, UITransform } from 'cc';
+import { _decorator, AudioSource, Component, Node, UITransform } from 'cc';
+import { EventManager } from './EventManager';
 const { ccclass, property } = _decorator;
 
 @ccclass('Bg')
@@ -16,8 +17,23 @@ export class Bg extends Component {
     @property
     speed: number = 100;
 
+    // 背景音效
+    bgSound: AudioSource = null;
+
     // 背景父节点高度
     bgParentHeight: number = 0;
+
+    gameOver: boolean = false;
+
+    onLoad() {
+        EventManager.on("GameOver", this.onGameOver, this);
+        // 获取背景音效组件
+        this.bgSound = this.getComponent(AudioSource);
+    }
+
+    protected onDestroy(): void {
+        EventManager.off("GameOver", this.onGameOver, this);
+    }
 
     start() {
         this.bgParentHeight = this.node.getComponent(UITransform).height;
@@ -26,6 +42,7 @@ export class Bg extends Component {
     }
 
     update(deltaTime: number) {
+        if(this.gameOver) return
         this.bg1.y -= this.speed * deltaTime;
         this.bg2.y -= this.speed * deltaTime;
         // 背景循环
@@ -35,6 +52,11 @@ export class Bg extends Component {
         if (this.bg2.position.y <= -this.bgParentHeight) {
             this.bg2.y = this.bg1.y + this.bgParentHeight;
         }
+    }
+
+    onGameOver() {
+        this.gameOver = true
+        this.bgSound.stop();
     }
 }
 

@@ -1,14 +1,14 @@
 [
   {
     "__type__": "cc.AnimationClip",
-    "_name": "Enemy2",
+    "_name": "PlayerBody-hit",
     "_objFlags": 0,
     "__editorExtras__": {
       "embeddedPlayerGroups": []
     },
     "_native": "",
     "sample": 60,
-    "speed": 1.5,
+    "speed": 1,
     "wrapMode": 1,
     "enableTrsBlending": false,
     "_duration": 0.6833333333333333,
@@ -69,15 +69,15 @@
     ],
     "_values": [
       {
-        "__uuid__": "4d396d61-f14a-48f1-8d7b-230e2c33d003@f9941",
+        "__uuid__": "b0b73050-ee9e-42c9-8f3a-0d9c7e1876d8@f9941",
         "__expectedType__": "cc.SpriteFrame"
       },
       {
-        "__uuid__": "ba5733e1-a57a-424f-8372-4bd7713f019b@f9941",
+        "__uuid__": "fcf758b4-e99b-4621-9b75-ae9bfbadeb0c@f9941",
         "__expectedType__": "cc.SpriteFrame"
       },
       {
-        "__uuid__": "88f46e78-2ba2-4355-88ac-e2790825a6da@f9941",
+        "__uuid__": "7dc7435c-cbcd-4c8a-bf7b-a60f683ec2ca@f9941",
         "__expectedType__": "cc.SpriteFrame"
       },
       {
