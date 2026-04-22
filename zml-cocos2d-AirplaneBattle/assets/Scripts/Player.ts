@@ -1,5 +1,6 @@
-import { _decorator, Animation, AudioSource, CCFloat, CCInteger, Collider2D, Component, Contact2DType, director, EventTouch, Input, input, instantiate, Node, Prefab, Vec3 } from 'cc';
+import { _decorator, Animation, AudioSource, CCFloat, CCInteger, Collider2D, Component, Contact2DType, director, EventTouch, Input, input, instantiate, IPhysics2DContact, Node, Prefab, Vec3 } from 'cc';
 import { EventManager } from './EventManager';
+import { Tool, ToolType } from './Tool';
 const { ccclass, property } = _decorator;
 
 
@@ -46,24 +47,44 @@ export class Player extends Component {
     @property({ type: AudioSource, tooltip: '死亡音效' })
     dieSound: AudioSource = null;
 
+    @property({type: CCFloat, tooltip: '无敌时间'})
+    invincibleTime: number = 3;
+
+    // 玩家血量
+    @property({type: CCInteger, tooltip: '玩家血量'})
+    playerHp: number = 3;
+
+    @property({ type: AudioSource, tooltip: '双发子弹道具音效' })
+    toolDoubleSound: AudioSource = null;
+    @property({ type: AudioSource, tooltip: '炸弹道具音效' })
+    toolBombSound: AudioSource = null;
+
+    // 碰撞组件
+    private collider: Collider2D = null;
+
     // 左右边界
-    moveX: number = 350;
+    private moveX: number = 350;
     // 上下边界
-    moveY: number = 570;
-
+    private moveY: number = 570;
     // 计时器
-    bulletTimer: number = 0;
-    // 血量
-    hp: number = 1;
+    private bulletTimer: number = 0;
     // 死亡
-    isDead: boolean = false;
-
+    private isDead: boolean = false;
     // 子节点飞机动画
     private childAnim: Animation = null;
+    // 无敌时间
+    private invincibleTimer: number = 0;
+    // 是否处在无敌状态
+    private isInvincible: boolean = false;
+
+    // 道具倒计时
+    private toolTimer: number = 0;
 
     protected onLoad(): void {
         // 监听触摸
         input.on(Input.EventType.TOUCH_MOVE, this.onTouchMove, this);
+        // 获取子节点动画组件
+        this.childAnim = this.playerNode.getComponent(Animation);
     }
 
     protected onDestroy(): void {
@@ -102,24 +123,33 @@ export class Player extends Component {
 
     start() {
         // 碰撞组件
-        let collider = this.getComponent(Collider2D);
-        if (collider) {
-            collider.on(Contact2DType.BEGIN_CONTACT, this.beginContact, this)
+        this.collider = this.getComponent(Collider2D);
+        if (this.collider) {
+            this.collider.on(Contact2DType.BEGIN_CONTACT, this.beginContact, this)
         }
-        // 获取子节点动画组件
-        this.childAnim = this.playerNode.getComponent(Animation);
     }
 
     // 碰撞
-    beginContact() {
-        this.hp -= 1
+    beginContact(selfCollider: Collider2D, otherCollider: Collider2D, contact: IPhysics2DContact) {
+        // 判断是否撞到道具
+        const tool = otherCollider.getComponent(Tool)
+        if (tool) {
+            this.hitTool(tool)
+        } else {
+            this.hitEnemy()
+        }
+    }
+
+    // 碰撞到敌人
+    hitEnemy() {
+        this.playerHp -= 1
         // 玩家死亡
-        if (this.hp <= 0) {
+        if (this.playerHp <= 0) {
             this.isDead = true;
             // 触摸停止
             input.off(Input.EventType.TOUCH_MOVE, this.onTouchMove, this);
             // 禁用碰撞组件
-            this.getComponent(Collider2D).enabled = false;
+            this.collider.enabled = false;
             // 向外告知游戏结束
             EventManager.emit('GameOver');
             // 播放死亡音效
@@ -132,6 +162,45 @@ export class Player extends Component {
             // }, this)
         } else {
             // 只碰撞，但是没死，玩家闪烁，处于无敌状态
+            this.isInvincible = true;
+            // 播放无敌动画
+            this.childAnim.play('PlayerBody-blink')
+            // 禁用碰撞组件
+            this.collider.enabled = false;
+            // 创建无敌时间计时器
+            this.invincibleTimer = setInterval(() => {
+                if (this.invincibleTimer) {
+                    clearInterval(this.invincibleTimer)
+                }
+                // 无敌时间到，播放普通动画
+                this.childAnim.play('PlayerBody')
+                this.isInvincible = false;
+                // 启用碰撞组件
+                this.collider.enabled = true;
+            }, this.invincibleTime * 1000)
+        }
+    }
+
+    // 碰撞到道具
+    hitTool(tool: Tool) {
+        switch (tool.toolType) {
+            case ToolType.bomb:
+                // 播放道具音效
+                this.toolBombSound.play();
+                break;
+            case ToolType.double:
+                // 如果时间内有道具，先清除，再开启新的倒计时
+                if (this.toolTimer) {
+                    clearTimeout(this.toolTimer)
+                }
+                // 播放道具音效
+                this.toolDoubleSound.play();
+                this.bulletType = BulletType.two;
+                // 时间限制
+                this.toolTimer = setTimeout(() => {
+                    this.bulletType = BulletType.one;
+                }, 5000);
+                break;
         }
     }
 
