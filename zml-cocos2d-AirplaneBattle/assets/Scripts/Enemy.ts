@@ -1,5 +1,7 @@
 import { _decorator, Component, Animation, Contact2DType, CCFloat, Collider2D, AudioClip, AudioSource } from 'cc';
 import { EventManager } from './EventManager';
+import { GameManage } from './GameManage';
+
 const { ccclass, property } = _decorator;
 
 enum EnemyType {
@@ -10,16 +12,17 @@ enum EnemyType {
 
 @ccclass('Enemy')
 export class Enemy extends Component {
-
     @property({type: CCFloat, tooltip: '敌人速度'})
     enemySpeed: number = 100;
 
-    // 敌人的类型
     @property({type: CCFloat, tooltip: '敌人类型'})
     enemyType: EnemyType = EnemyType.one;
 
     @property({type: CCFloat, tooltip: '敌人的血量'})
     enemyHp: number = 1;
+
+    @property({type: CCFloat, tooltip: '敌人分数'})
+    enemyScore: number = 0;
 
     // 敌人动画组件
     private enemyAnimation: Animation = null;
@@ -39,9 +42,13 @@ export class Enemy extends Component {
 
     protected onLoad(): void {
         EventManager.on('GameOver', this.onGameOver, this);
+        // 监听炸弹爆炸事件
+        EventManager.on('onBoom', this.onBoomExplosion, this);
     }
     protected onDestroy(): void {
         EventManager.off('GameOver', this.onGameOver, this);
+        // 移除炸弹爆炸事件
+        EventManager.off('onBoom', this.onBoomExplosion, this);
     }
 
     start() {
@@ -77,17 +84,7 @@ export class Enemy extends Component {
         if (this.gameOver) return;
         this.enemyHp -= 1
         if (this.enemyHp <= 0) {
-            this.isDead = true;
-            // 禁用碰撞组件
-            this.getComponent(Collider2D).enabled = false;
-            // 播放死亡音效
-            this.dieSound.play()
-            // 播放死亡动画
-            this.enemyAnimation.play()
-            // 动画播放结束，销毁敌人
-            this.enemyAnimation.once(Animation.EventType.FINISHED, () => {
-                this.node.destroy()
-            }, this)
+            this.die()
         } else {
             // 子弹打到敌人，敌人还没死，播放撞击音效
             if (this.hitSound) {
@@ -100,11 +97,36 @@ export class Enemy extends Component {
         }
     }
 
+    // 敌人死亡处理 isSound 是否播放死亡音效
+    die(isSound: boolean = true) {
+        // 更新分数
+        EventManager.emit('updateScore', this.enemyScore);
+        // 敌人死亡，更新游戏状态
+        this.isDead = true;
+        // 禁用碰撞组件
+        this.getComponent(Collider2D).enabled = false;
+        // 播放死亡音效
+        if (isSound) {
+            this.dieSound.play()
+        }
+        // 播放死亡动画
+        this.enemyAnimation.play()
+        // 动画播放结束，销毁敌人
+        this.enemyAnimation.once(Animation.EventType.FINISHED, () => {
+            this.node.destroy()
+        }, this)
+    }
+
     onGameOver() {
         this.gameOver = true
         if (this.enemyAnimation) {
             this.enemyAnimation.stop();
         }
+    }
+
+    // 炸弹爆炸事件 无论什么敌人，都一击毙命
+    onBoomExplosion() {
+        this.die(false)
     }
 }
 

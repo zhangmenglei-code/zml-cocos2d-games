@@ -1,4 +1,4 @@
-import { _decorator, Animation, AudioSource, CCFloat, CCInteger, Collider2D, Component, Contact2DType, director, EventTouch, Input, input, instantiate, IPhysics2DContact, Node, Prefab, Vec3 } from 'cc';
+import { _decorator, Animation, AudioSource, CCFloat, CCInteger, Collider2D, Component, Contact2DType, director, EventTouch, Input, input, instantiate, IPhysics2DContact, Label, Node, Prefab, Vec3 } from 'cc';
 import { EventManager } from './EventManager';
 import { Tool, ToolType } from './Tool';
 const { ccclass, property } = _decorator;
@@ -12,7 +12,6 @@ enum BulletType {
 
 @ccclass('Player')
 export class Player extends Component {
-
     @property({type: CCFloat, tooltip: '子弹发射频率(快0 - 慢1)'})
     bulletTime: number = 0.5;
 
@@ -36,32 +35,44 @@ export class Player extends Component {
     @property({ type: Node, tooltip: '玩家体节点' })
     playerNode: Node = null;
 
-    // 子弹类型
     @property({type: CCInteger, tooltip: '子弹类型'})
     bulletType: BulletType = BulletType.one;
 
-    // 子弹发射音效
     @property({ type: AudioSource, tooltip: '子弹发射音效' })
     bulletSound: AudioSource = null;
-    // 死亡音效
+
     @property({ type: AudioSource, tooltip: '死亡音效' })
     dieSound: AudioSource = null;
 
     @property({type: CCFloat, tooltip: '无敌时间'})
     invincibleTime: number = 3;
 
-    // 玩家血量
     @property({type: CCInteger, tooltip: '玩家血量'})
     playerHp: number = 3;
 
+    @property({type: Label, tooltip: '玩家血量节点'})
+    playerHpNode: Label = null;
+
     @property({ type: AudioSource, tooltip: '双发子弹道具音效' })
     toolDoubleSound: AudioSource = null;
+
     @property({ type: AudioSource, tooltip: '炸弹道具音效' })
     toolBombSound: AudioSource = null;
 
+    @property({type: CCFloat, tooltip: '双发子弹有效期'})
+    toolDoubleTime: number = 5;
+
+    @property({type: CCInteger, tooltip: '炸弹个数'})
+    boomCount: number = 0;
+
+    @property({type: Label, tooltip: '炸弹数量节点'})
+    boomCountNode: Label = null;
+
+    @property({type: AudioSource, tooltip: '炸弹音效'})
+    bombSound: AudioSource = null;
+
     // 碰撞组件
     private collider: Collider2D = null;
-
     // 左右边界
     private moveX: number = 350;
     // 上下边界
@@ -76,15 +87,23 @@ export class Player extends Component {
     private invincibleTimer: number = 0;
     // 是否处在无敌状态
     private isInvincible: boolean = false;
-
     // 道具倒计时
     private toolTimer: number = 0;
+    // 游戏是否暂停
+    private isPause: boolean = false;
 
+    // 初始化
     protected onLoad(): void {
         // 监听触摸
         input.on(Input.EventType.TOUCH_MOVE, this.onTouchMove, this);
         // 获取子节点动画组件
         this.childAnim = this.playerNode.getComponent(Animation);
+        // 初始化炸弹数量
+        this.boomCountNode.string = this.boomCount.toString();
+        // 初始化玩家血量
+        this.playerHpNode.string = this.playerHp.toString();
+        // 监听暂停事件
+        EventManager.on('gamePause', this.onGamePause, this);
     }
 
     protected onDestroy(): void {
@@ -95,10 +114,15 @@ export class Player extends Component {
         if (collider) {
             collider.off(Contact2DType.BEGIN_CONTACT, this.beginContact, this)
         }
+        // 移除暂停事件
+        EventManager.off('gamePause', this.onGamePause, this);
     }
 
     // 触摸移动
     onTouchMove(event: EventTouch) {
+        // 判断是否暂停
+        if (this.isPause) return;
+        // 移动玩家
         const position = this.node.position;
         const targetPosition = new Vec3(position.x + event.getDeltaX(), position.y + event.getDeltaY(), position.z)
         // 判断边界
@@ -135,7 +159,8 @@ export class Player extends Component {
         const tool = otherCollider.getComponent(Tool)
         if (tool) {
             this.hitTool(tool)
-        } else {
+        }
+        if (!tool && !this.isInvincible){
             this.hitEnemy()
         }
     }
@@ -143,6 +168,7 @@ export class Player extends Component {
     // 碰撞到敌人
     hitEnemy() {
         this.playerHp -= 1
+        this.playerHpNode.string = this.playerHp.toString();
         // 玩家死亡
         if (this.playerHp <= 0) {
             this.isDead = true;
@@ -165,8 +191,8 @@ export class Player extends Component {
             this.isInvincible = true;
             // 播放无敌动画
             this.childAnim.play('PlayerBody-blink')
-            // 禁用碰撞组件
-            this.collider.enabled = false;
+            // 禁用碰撞组件（无敌状态不能拾取道具了）
+            // this.collider.enabled = false;
             // 创建无敌时间计时器
             this.invincibleTimer = setInterval(() => {
                 if (this.invincibleTimer) {
@@ -187,6 +213,10 @@ export class Player extends Component {
             case ToolType.bomb:
                 // 播放道具音效
                 this.toolBombSound.play();
+                // 炸弹数量增加
+                this.boomCount += 1;
+                // 更新炸弹数量节点
+                this.boomCountNode.string = this.boomCount.toString();
                 break;
             case ToolType.double:
                 // 如果时间内有道具，先清除，再开启新的倒计时
@@ -199,8 +229,22 @@ export class Player extends Component {
                 // 时间限制
                 this.toolTimer = setTimeout(() => {
                     this.bulletType = BulletType.one;
-                }, 5000);
+                }, this.toolDoubleTime * 1000);
                 break;
+        }
+    }
+
+    // 点击炸弹
+    clickBomb() {
+        if (this.boomCount > 0 && !this.isPause) {
+            // 炸弹数量减少
+            this.boomCount -= 1;
+            // 更新炸弹数量节点
+            this.boomCountNode.string = this.boomCount.toString();
+            // 播放炸弹音效
+            this.bombSound.play();
+            // 通知所有敌人爆炸
+            EventManager.emit('onBoom');
         }
     }
 
@@ -250,6 +294,11 @@ export class Player extends Component {
             // 播放子弹发射音效
             this.bulletSound.play();
         }
+    }
+
+    // 游戏是否暂停
+    onGamePause(isPause: boolean) {
+        this.isPause = isPause;
     }
 }
 

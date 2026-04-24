@@ -165,6 +165,7 @@
     "enemySpeed": 100,
     "enemyType": 3,
     "enemyHp": 10,
+    "enemyScore": 500,
     "dieSound": {
       "__id__": 8
     },
